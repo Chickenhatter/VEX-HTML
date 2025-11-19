@@ -1,0 +1,75 @@
+
+<head>
+<link rel="stylesheet" href="The.css"> 
+</head>
+<h1>Hello people who are starting to get into vex robotics</h1>
+<h3>This website is to help you get started with vex robotis coding by giving you a template that you can add code to when you get good.</h3>
+<h3>Yes</h3>
+<h1>The Quiz</h1>
+<h2>The drivetrain</h2>
+<p><em>What is the number of motors for the drivetrain?</em></p>
+
+<select id="wheel">
+  <option value="2">2</option>
+  <option value="4">4</option>
+  <option value="6">6</option>
+  <option value="8">8</option>
+</select>
+<button id="button">
+  Change wheels #
+</button>
+<script>
+function clickAction() {
+  // Put your code here
+  MotorNum.textContent = wheel.value
+  message.textContent = 'Good choice!'
+  if (wheel.value == '2'){
+    w.textContent = 'Good choice!';
+  } else{
+    w.textContent = 'Help';
+  }
+}
+button.onclick = clickAction;
+</script>
+<h1 id="MotorNum"></h1>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>
+This is the code
+</h1>
+
+<div><p>Wait dose this work</p><p id="w"></p></div>

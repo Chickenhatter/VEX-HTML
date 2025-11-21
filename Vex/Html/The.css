@@ -1,5 +1,11 @@
-div{
-display: flex;;
+.line{
+    display: flexbox;
+    line-height: 10%;
 }
-
+.code{
+    line-height: 10%;
+    background-color:black;
+    color:aqua;
+    padding: top 100px;
+}
 

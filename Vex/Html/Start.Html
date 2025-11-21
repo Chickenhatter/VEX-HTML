@@ -1,4 +1,4 @@
-
+<em></em>
 <head>
 <link rel="stylesheet" href="The.css"> 
 </head>
@@ -7,7 +7,7 @@
 <h3>Yes</h3>
 <h1>The Quiz</h1>
 <h2>The drivetrain</h2>
-<p><em>What is the number of motors for the drivetrain?</em></p>
+<p>What is the number of motors for the drivetrain?</p>
 
 <select id="wheel">
   <option value="2">2</option>
@@ -16,54 +16,114 @@
   <option value="8">8</option>
 </select>
 <button id="button">
-  Change wheels #
+  Change wheels Motor #
 </button>
 <script>
 function clickAction() {
-  // Put your code here
   MotorNum.textContent = wheel.value
   message.textContent = 'Good choice!'
   if (wheel.value == '2'){
-    w.textContent = 'Good choice!';
-  } else{
-    w.textContent = 'Help';
+    L1.textContent = 'Motor';
+    R2
   }
 }
 button.onclick = clickAction;
 </script>
-<h1 id="MotorNum"></h1>
-  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<H2>Other Robot Motors</H2>
+<h3>For each motor you have add another by the ports that they are in eg port motor 16 add 16</h3>
+<select id="rMotor">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+</select>
+<button id="button2">
+  Add another motor
+</button>
+<p id="w"></p>
+<script>
+  function clickAction(){
+  if(rMotor.value == '1'){
+    extern1.textContent = 'extern motor Motor1;';
+  }
+  if(rMotor.value == '2'){
+    extern2.textContent = 'extern motor Motor2;'
+  }
+  if(rMotor.value == '3'){
+    extern3.textContent = 'extern motor Motor3;'
+  }
+  if(rMotor.value == '4'){
+    extern4.textContent = 'extern motor Motor4;'
+  }
+  if(rMotor.value == '5'){
+    extern5.textContent = 'extern motor Motor5;'
+  }
+  if(rMotor.value == '6'){
+    extern6.textContent = 'extern motor Motor6;'
+  }
+  if(rMotor.value == '7'){
+    extern7.textContent = 'extern motor Motor7;'
+  }
+  if(rMotor.value == '8'){
+    extern8.textContent = 'extern motor Motor8;'
+  }
+  if(rMotor.value == '9'){
+    extern9.textContent = 'extern motor Motor9;'
+  }
+  if(rMotor.value == '10'){
+    extern10.textContent = 'extern motor Motor10;'
+  }  
+  if(rMotor.value == '11'){
+    extern11.textContent = 'extern motor Motor11;'
+  }
+  if(rMotor.value == '12'){
+    extern12.textContent = 'extern motor Motor12;'
+  }
+  if(rMotor.value == '13'){
+    extern13.textContent = 'extern motor Motor13;'
+  }  
+  if(rMotor.value == '14'){
+    extern14.textContent = 'extern motor Motor14;'
+  }
+  if(rMotor.value == '15'){
+    extern15.textContent = 'extern motor Motor15;'
+  }
+  if(rMotor.value == '16'){
+    extern16.textContent = 'extern motor Motor16;'
+  }  
+  if(rMotor.value == '17'){
+    extern17.textContent = 'extern motor Motor17;'
+  }
+  if(rMotor.value == '18'){
+    extern18.textContent = 'extern motor Motor18;'
+  }
+  if(rMotor.value == '19'){
+    extern19.textContent = 'extern motor Motor19;'
+  }
+  if(rMotor.value == '20'){
+    extern20.textContent = 'extern motor Motor20;'
+  }
+  }
+button2.onclick = clickAction;
+</script>
 
 
 
@@ -71,5 +131,46 @@ button.onclick = clickAction;
 <h1>
 This is the code
 </h1>
+<h2>In robot-config.cpp</h2>
+<div class="code">
+<p>#inclue "vex.h"</p>
+<p>using namespace vex;</p>
+<p>using signature = vision::signature;</p>
+<p>using code = vision::code;</p>
+<p>brain Brain;</p>
+<p>controller Controller1 = controller(primary);</p>
 
-<div><p>Wait dose this work</p><p id="w"></p></div>
+<p>bool RemoteControlCodeEnabled = true;</p>
+</div>
+
+
+<h2>In robot-config.h</h2>
+<div class="code">
+
+
+<p>using namespace vex;</p>
+<p>extern brain Brain;</p>
+<p>extern controller Contoller1;</p>
+<p>extern drivetrain Drivetrain;</p>
+<div class="line"><p id="extern1"></p></div>
+<div class="line"><p id="extern2"></p></p></div>
+<div class="line"><p id="extern3"></p></div>
+<div class="line"><p id="extern4"></p></div>
+<div class="line"><p id="extern5"></p></div>
+<div class="line"><p id="extern6"></p></div>
+<div class="line"><p id="extern7"></p></div>
+<div class="line"><p id="extern8"></p></div>
+<div class="line"><p id="extern9"></p></div>
+<div class="line"><p id="extern10"></p></div>
+<div class="line"><p id="extern11"></p></div>
+<div class="line"><p id="extern12"></p></div>
+<div class="line"><p id="extern13"></p></div>
+<div class="line"><p id="extern14"></p></div>
+<div class="line"><p id="extern15"></p></div>
+<div class="line"><p id="extern16"></p></div>
+<div class="line"><p id="extern17"></p></div>
+<div class="line"><p id="extern18"></p></div>
+<div class="line"><p id="extern19"></p></div>
+<div class="line"><p id="extern20"></p></div>
+void vexcodeInit(void);
+</div>

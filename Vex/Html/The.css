@@ -1,6 +1,7 @@
 .line{
-    display: flexbox;
+    white-space: nowrap;
     line-height: 10%;
+    flex-wrap: nowrap;
 }
 .code{
     line-height: 10%;

@@ -1,0 +1,669 @@
+<em></em>
+<head>
+<link rel="stylesheet" href="The.css"> 
+</head>
+<h1>Hello people who are starting to get into vex robotics</h1>
+<h3>This website is to help you get started with vex robotis coding by giving you a template that you can add code to when you get good.</h3>
+<h3>Yes</h3>
+<h1>The Quiz</h1>
+<h2>The drivetrain</h2>
+<p>What is the number of motors for the drivetrain?</p>
+
+<select id="wheel">
+  <option value="2">2</option>
+  <option value="4">4</option>
+  <option value="6">6</option>
+  <option value="8">8</option>
+</select>
+<button id="button">
+  Change wheels Motor #
+</button>
+<script>
+function clickAction() {
+  MotorNum.textContent = wheel.value
+  message.textContent = 'Good choice!'
+  if (wheel.value == '2'){
+    L1.textContent = 'Motor';
+    R2
+  }
+}
+button.onclick = clickAction;
+</script>
+<h3>For each left motor add a motor</h3>
+<select id="lDrive">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+</select>
+<button id="buttonl">
+  Add another left drivetrain motor
+</button>
+<script>
+  function clickAction(){
+  if(lDrive.value == '1'){
+    dml1.textContent = 'motor LeftMotorA = motor(PORT1, ratio18_1, false);';
+    SmartL1.textContent = 'LeftMotorA ,';
+  }
+  if(lDrive.value == '2'){
+    dml2.textContent = 'motor LeftMotorB = motor(PORT2, ratio18_1, false);';
+    SmartL2.textContent = 'LeftMotorB ,';
+  }
+  if(lDrive.value == '3'){
+    dml3.textContent = 'motor LeftMotorC = motor(PORT3, ratio18_1, false);';
+    SmartL3.textContent = 'LeftMotorC ,';
+  }
+  if(lDrive.value == '4'){
+    dml4.textContent = 'motor LeftMotorD = motor(PORT4, ratio18_1, false);';
+    SmartL4.textContent = 'LeftMotorD ,';
+  }
+  if(lDrive.value == '5'){
+    dml5.textContent = 'motor LeftMotorE = motor(PORT5, ratio18_1, false);';
+    SmartL5.textContent = 'LeftMotorE ,';
+  }
+  if(lDrive.value == '6'){
+    dml6.textContent = 'motor LeftMotorF = motor(PORT6, ratio18_1, false);';
+    SmartL6.textContent = 'LeftMotorF ,';
+  }
+  if(lDrive.value == '7'){
+    dml7.textContent = 'motor LeftMotorG = motor(PORT7, ratio18_1, false);';
+    SmartL7.textContent = 'LeftMotorG ,';
+  }
+  if(lDrive.value == '8'){
+    dml8.textContent = 'motor LeftMotorH = motor(PORT8, ratio18_1, false);';
+    SmartL8.textContent = 'LeftMotorH ,';
+  }
+  if(lDrive.value == '9'){
+    dml9.textContent = 'motor LeftMotorI = motor(PORT9, ratio18_1, false);';
+    SmartL9.textContent = 'LeftMotorI ,';
+  }
+  if(lDrive.value == '10'){
+    dml10.textContent = 'motor LeftMotorJ = motor(PORT10, ratio18_1, false);';
+    SmartL10.textContent = 'LeftMotorJ ,';
+  }  
+  if(lDrive.value == '11'){
+    dml11.textContent = 'motor LeftMotorK = motor(PORT11, ratio18_1, false);';
+    SmartL11.textContent = 'LeftMotorK ,';
+  }
+  if(lDrive.value == '12'){
+    dml12.textContent = 'motor LeftMotorL = motor(PORT12, ratio18_1, false);';
+    SmartL12.textContent = 'LeftMotorL ,';
+  }
+  if(lDrive.value == '13'){
+    dml13.textContent = 'motor LeftMotorM = motor(PORT13, ratio18_1, false);';
+    SmartL13.textContent = 'LeftMotorM ,';
+  }  
+  if(lDrive.value == '14'){
+    dml4.textContent = 'motor LeftMotorN = motor(PORT14, ratio18_1, false);';
+    SmartL14.textContent = 'LeftMotorN ,';
+  }
+  if(lDrive.value == '15'){
+    dml15.textContent = 'motor LeftMotorO = motor(PORT15, ratio18_1, false);';
+    SmartL15.textContent = 'LeftMotorO ,';
+  }
+  if(lDrive.value == '16'){
+    dml16.textContent = 'motor LeftMotorP = motor(PORT16, ratio18_1, false);';
+    SmartL16.textContent = 'LeftMotorP ,';
+  }  
+  if(lDrive.value == '17'){
+    dml17.textContent = 'motor LeftMotorQ = motor(PORT17, ratio18_1, false);';
+    SmartL17.textContent = 'LeftMotorQ ,';
+  }
+  if(lDrive.value == '18'){
+    dml18.textContent = 'motor LeftMotorR = motor(PORT18, ratio18_1, false);';
+    SmartL18.textContent = 'LeftMotorR ,';
+  }
+  if(lDrive.value == '19'){
+    dml19.textContent = 'motor LeftMotorS = motor(PORT19, ratio18_1, false);';
+    SmartL19.textContent = 'LeftMotorS ,';
+  }
+  if(lDrive.value == '20'){
+    dml20.textContent = 'motor LeftMotorT = motor(PORT20, ratio18_1, false);';
+    SmartL20.textContent = 'LeftMotorT ,';
+  }
+  if(lDrive.value == '21'){
+    dml21.textContent = 'motor LeftMotorU = motor(PORT21, ratio18_1, false);';
+    SmartL21.textContent = 'LeftMotorU ,';
+  }
+  
+  
+  
+  
+  }
+buttonl.onclick = clickAction;
+</script>
+
+
+
+
+<h3>For each right motor add a motor</h3>
+<select id="rDrive">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+</select>
+<button id="buttonR">
+  Add another right drivetrain motor
+</button>
+<script>
+  function clickAction(){
+  if(rDrive.value == '1'){
+    dmr1.textContent = 'motor RightMotorA = motor(PORT1, ratio18_1, true);';
+    SmartR1.textContent = 'RightMotorA ,';
+  }
+  if(rDrive.value == '2'){
+    dmr2.textContent = 'motor RightMotorB = motor(PORT2, ratio18_1, true);';
+    SmartR2.textContent = 'RightMotorB ,';
+  }
+  if(rDrive.value == '3'){
+    dmr3.textContent = 'motor RightMotorC = motor(PORT3, ratio18_1, true);';
+    SmartR3.textContent = 'RightMotorC ,';
+  }
+  if(rDrive.value == '4'){
+    dmr4.textContent = 'motor RightMotorD = motor(PORT4, ratio18_1, true);';
+    SmartR4.textContent = 'RightMotorD ,';
+  }
+  if(rDrive.value == '5'){
+    dmr5.textContent = 'motor RightMotorE = motor(PORT5, ratio18_1, true);';
+    SmartR5.textContent = 'RightMotorE ,';
+  }
+  if(rDrive.value == '6'){
+    dmr6.textContent = 'motor RightMotorF = motor(PORT6, ratio18_1, true);';
+    SmartR6.textContent = 'RightMotorF ,';
+  }
+  if(rDrive.value == '7'){
+    dmr7.textContent = 'motor RightMotorG = motor(PORT7, ratio18_1, true);';
+    SmartR7.textContent = 'RightMotorG ,';
+  }
+  if(rDrive.value == '8'){
+    dmr8.textContent = 'motor RightMotorH = motor(PORT8, ratio18_1, true);';
+    SmartR8.textContent = 'RightMotorH ,';
+  }
+  if(rDrive.value == '9'){
+    dmr9.textContent = 'motor RightMotorI = motor(PORT9, ratio18_1, true);';
+    SmartR9.textContent = 'RightMotorI ,';
+  }
+  if(rDrive.value == '10'){
+    dmr10.textContent = 'motor RightMotorJ = motor(PORT10, ratio18_1, true);';
+    SmartR10.textContent = 'RighttMotorJ ,';
+  }  
+  if(rDrive.value == '11'){
+    dmr11.textContent = 'motor RightMotorK = motor(PORT11, ratio18_1, true);';
+    SmartR11.textContent = 'RightMotorK ,';
+  }
+  if(rDrive.value == '12'){
+    dmr12.textContent = 'motor RightMotorL = motor(PORT12, ratio18_1, true);';
+    SmartR12.textContent = 'RightMotorL ,';
+  }
+  if(rDrive.value == '13'){
+    dmr13.textContent = 'motor RightMotorM = motor(PORT13, ratio18_1, true);';
+    SmartR13.textContent = 'RightMotorM ,';
+  }  
+  if(rDrive.value == '14'){
+    dmr4.textContent = 'motor RightMotorN = motor(PORT14, ratio18_1, true);';
+    SmartR14.textContent = 'RightMotorN ,';
+  }
+  if(rDrive.value == '15'){
+    dmr15.textContent = 'motor RightMotorO = motor(PORT15, ratio18_1, true);';
+    SmartR15.textContent = 'RightMotorO ,';
+  }
+  if(rDrive.value == '16'){
+    dmr16.textContent = 'motor RightMotorP = motor(PORT16, ratio18_1, true);';
+    SmartR16.textContent = 'RightMotorP ,';
+  }  
+  if(rDrive.value == '17'){
+    dmr17.textContent = 'motor RightMotorQ = motor(PORT17, ratio18_1, true);';
+    SmartR17.textContent = 'RightMotorQ ,';
+  }
+  if(rDrive.value == '18'){
+    dmr18.textContent = 'motor RightMotorR = motor(PORT18, ratio18_1, true);';
+    SmartR18.textContent = 'RightMotorR ,';
+  }
+  if(rDrive.value == '19'){
+    dmr19.textContent = 'motor RightMotorS = motor(PORT19, ratio18_1, true);';
+    SmartR19.textContent = 'RightMotorS ,';
+  }
+  if(rDrive.value == '20'){
+    dmr20.textContent = 'motor RightMotorT = motor(PORT20, ratio18_1, true);';
+    SmartR20.textContent = 'RightMotorT ,';
+  }
+  if(rDrive.value == '21'){
+    dmr21.textContent = 'motor RightMotorU = motor(PORT21, ratio18_1, true);';
+    SmartR21.textContent = 'RightMotorU ,';
+  }
+  
+  
+  
+  
+  }
+buttonR.onclick = clickAction;
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<H2>Other Robot Motors</H2>
+<h3>For each motor you have add another by the ports that they are in eg port motor 16 add 16</h3>
+<select id="rMotor">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+</select>
+<button id="button2">
+  Add another motor
+</button>
+<p id="w"></p>
+<script>
+  function clickAction(){
+  if(rMotor.value == '1'){
+    extern1.textContent = 'extern motor Motor1;';
+    def1.textContent = 'motor Motor1 = motor(PORT1, ratio18_1, false);'
+  }
+  if(rMotor.value == '2'){
+    extern2.textContent = 'extern motor Motor2;'
+    def2.textContent = 'motor Motor2 = motor(PORT2, ratio18_1, false);'
+  }
+  if(rMotor.value == '3'){
+    extern3.textContent = 'extern motor Motor3;'
+    def3.textContent = 'motor Motor3 = motor(PORT3, ratio18_1, false);'
+  }
+  if(rMotor.value == '4'){
+    extern4.textContent = 'extern motor Motor4;'
+    def4.textContent = 'motor Motor4 = motor(PORT4, ratio18_1, false);'
+  }
+  if(rMotor.value == '5'){
+    extern5.textContent = 'extern motor Motor5;'
+    def5.textContent = 'motor Motor5 = motor(PORT5, ratio18_1, false);'
+  }
+  if(rMotor.value == '6'){
+    extern6.textContent = 'extern motor Motor6;'
+    def6.textContent = 'motor Motor6 = motor(PORT6, ratio18_1, false);'
+  }
+  if(rMotor.value == '7'){
+    extern7.textContent = 'extern motor Motor7;'
+    def7.textContent = 'motor Motor7 = motor(PORT7, ratio18_1, false);'
+  }
+  if(rMotor.value == '8'){
+    extern8.textContent = 'extern motor Motor8;'
+    def8.textContent = 'motor Motor8 = motor(PORT8, ratio18_1, false);'
+  }
+  if(rMotor.value == '9'){
+    extern9.textContent = 'extern motor Motor9;'
+    def9.textContent = 'motor Motor9 = motor(PORT9, ratio18_1, false);'
+  }
+  if(rMotor.value == '10'){
+    extern10.textContent = 'extern motor Motor10;'
+    def10.textContent = 'motor Motor10 = motor(PORT10, ratio18_1, false);'
+  }  
+  if(rMotor.value == '11'){
+    extern11.textContent = 'extern motor Motor11;'
+    def11.textContent = 'motor Motor11 = motor(PORT11, ratio18_1, false);'
+  }
+  if(rMotor.value == '12'){
+    extern12.textContent = 'extern motor Motor12;'
+    def12.textContent = 'motor Motor12 = motor(PORT12, ratio18_1, false);'
+  }
+  if(rMotor.value == '13'){
+    extern13.textContent = 'extern motor Motor13;'
+    def13.textContent = 'motor Motor13 = motor(PORT13, ratio18_1, false);'
+  }  
+  if(rMotor.value == '14'){
+    extern14.textContent = 'extern motor Motor14;'
+    def14.textContent = 'motor Motor14 = motor(PORT14, ratio18_1, false);'
+  }
+  if(rMotor.value == '15'){
+    extern15.textContent = 'extern motor Motor15;'
+    def15.textContent = 'motor Motor15 = motor(PORT15, ratio18_1, false);'
+  }
+  if(rMotor.value == '16'){
+    extern16.textContent = 'extern motor Motor16;'
+    def16.textContent = 'motor Motor16 = motor(PORT16, ratio18_1, false);'
+  }  
+  if(rMotor.value == '17'){
+    extern17.textContent = 'extern motor Motor17;'
+    def17.textContent = 'motor Motor17 = motor(PORT17, ratio18_1, false);'
+  }
+  if(rMotor.value == '18'){
+    extern18.textContent = 'extern motor Motor18;'
+    def18.textContent = 'motor Motor18 = motor(PORT18, ratio18_1, false);'
+  }
+  if(rMotor.value == '19'){
+    extern19.textContent = 'extern motor Motor19;'
+    def19.textContent = 'motor Motor19 = motor(PORT19, ratio18_1, false);'
+  }
+  if(rMotor.value == '20'){
+    extern20.textContent = 'extern motor Motor20;'
+    def20.textContent = 'motor Motor20 = motor(PORT20, ratio18_1, false);'
+  }
+  if(rMotor.value == '21'){
+    extern21.textContent = 'extern motor Motor21;'
+    def21.textContent = 'motor Motor21 = motor(PORT21, ratio18_1, false);'
+  }
+  }
+button2.onclick = clickAction;
+</script>
+
+
+
+
+<h2>Adding controls</h2>
+<p>The controller button, The motor that spins, the direction the motor spins</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>
+This is the code
+</h1>
+<h2>In robot-config.cpp</h2>
+<div class="code">
+<p>#inclue "vex.h"</p>
+<p>using namespace vex;</p>
+<p>using signature = vision::signature;</p>
+<p>using code = vision::code;</p>
+<p>brain Brain;</p>
+<p>controller Controller1 = controller(primary);</p>
+<div class="line"><p id="def1"></p></div>
+<div class="line"><p id="def2"></p></div>
+<div class="line"><p id="def3"></p></div>
+<div class="line"><p id="def4"></p></div>
+<div class="line"><p id="def5"></p></div>
+<div class="line"><p id="def6"></p></div>
+<div class="line"><p id="def7"></p></div>
+<div class="line"><p id="def8"></p></div>
+<div class="line"><p id="def9"></p></div>
+<div class="line"><p id="def10"></p></div>
+<div class="line"><p id="def11"></p></div>
+<div class="line"><p id="def12"></p></div>
+<div class="line"><p id="def13"></p></div>
+<div class="line"><p id="def14"></p></div>
+<div class="line"><p id="def15"></p></div>
+<div class="line"><p id="def16"></p></div>
+<div class="line"><p id="def17"></p></div>
+<div class="line"><p id="def18"></p></div>
+<div class="line"><p id="def19"></p></div>
+<div class="line"><p id="def20"></p></div>
+<div class="line"><p id="def21"></p></div>
+
+<div class="line"><p id="dml1"></p></div>
+<div class="line"><p id="dml2"></p></div>
+<div class="line"><p id="dml3"></p></div>
+<div class="line"><p id="dml4"></p></div>
+<div class="line"><p id="dml5"></p></div>
+<div class="line"><p id="dml6"></p></div>
+<div class="line"><p id="dml7"></p></div>
+<div class="line"><p id="dml8"></p></div>
+<div class="line"><p id="dml9"></p></div>
+<div class="line"><p id="dml10"></p></div>
+<div class="line"><p id="dml11"></p></div>
+<div class="line"><p id="dml12"></p></div>
+<div class="line"><p id="dml13"></p></div>
+<div class="line"><p id="dml14"></p></div>
+<div class="line"><p id="dml15"></p></div>
+<div class="line"><p id="dml16"></p></div>
+<div class="line"><p id="dml17"></p></div>
+<div class="line"><p id="dml18"></p></div>
+<div class="line"><p id="dml19"></p></div>
+<div class="line"><p id="dml20"></p></div>
+<div class="line"><p id="dml21"></p></div>
+
+
+
+<div class="line"><p id="dmr1"></p></div>
+<div class="line"><p id="dmr2"></p></div>
+<div class="line"><p id="dmr3"></p></div>
+<div class="line"><p id="dmr4"></p></div>
+<div class="line"><p id="dmr5"></p></div>
+<div class="line"><p id="dmr6"></p></div>
+<div class="line"><p id="dmr7"></p></div>
+<div class="line"><p id="dmr8"></p></div>
+<div class="line"><p id="dmr9"></p></div>
+<div class="line"><p id="dmr10"></p></div>
+<div class="line"><p id="dmr11"></p></div>
+<div class="line"><p id="dmr12"></p></div>
+<div class="line"><p id="dmr13"></p></div>
+<div class="line"><p id="dmr14"></p></div>
+<div class="line"><p id="dmr15"></p></div>
+<div class="line"><p id="dmr16"></p></div>
+<div class="line"><p id="dmr17"></p></div>
+<div class="line"><p id="dmr18"></p></div>
+<div class="line"><p id="dmr19"></p></div>
+<div class="line"><p id="dmr20"></p></div>
+<div class="line"><p id="dmr21"></p></div>
+
+
+
+
+
+<div class="line"><p>motor_group LeftDriveSmart = motor_group(</p><p id="SmartL1"></p><p id="SmartL2"></p><p id="SmartL3"></p><p id="SmartL4"></p><p id="SmartL5"></p><p id="SmartL6"></p><p id="SmartL7"></p><p id="SmartL8"></p><p id="SmartL9"></p><p id="SmartL10"></p><p id="SmartL11"></p><p id="SmartL12"></p><p id="SmartL13"></p><p id="SmartL14"></p><p id="SmartL15"></p><p id="SmartL16"></p><p id="SmartL17"></p><p id="SmartL18"></p><p id="SmartL19"></p><p id="SmartL20"></p><p id="SmartL21"></p><p>);</p></div>
+<div class="line"><p>motor_group RightDriveSmart = motor_group(</p><p id="SmartR1"></p><p id="SmartR2"></p><p id="SmartR3"></p><p id="SmartR4"></p><p id="SmartR5"></p><p id="SmartR6"></p><p id="SmartR7"></p><p id="SmartR8"></p><p class="SmartR9"></p><p id="SmartR10"></p><p id="SmartR11"></p><p id="SmartR12"></p><p id="SmartR13"></p><p id="SmartR14"></p><p id="SmartR16"></p><p id="SmartR17"></p><p id="SmartR18"></p><p id="SmartR19"></p><p id="SmartR20"></p><p id="SmartR21"></p><p>);</p></div>
+<p>drivetrain Drivetrain = drivetrain(LeftDriveSmart, RightDriveSmart, 319.19, 295, 40, mm, 1);</p>
+
+<p>bool RemoteControlCodeEnabled = true;</p>
+<p>bool DrivetrainLNeedsToBeStopped_Controller1 = true;</p>
+<p>bool DrivetrainRNeedsToBeStopped_Controller1 = true;</p>
+</div>
+
+
+<h2>In robot-config.h</h2>
+<div class="code">
+
+
+<p>using namespace vex;</p>
+<p>extern brain Brain;</p>
+<p>extern controller Contoller1;</p>
+<p>extern drivetrain Drivetrain;</p>
+<div class="line"><p id="extern1"></p></div>
+<div class="line"><p id="extern2"></p></p></div>
+<div class="line"><p id="extern3"></p></div>
+<div class="line"><p id="extern4"></p></div>
+<div class="line"><p id="extern5"></p></div>
+<div class="line"><p id="extern6"></p></div>
+<div class="line"><p id="extern7"></p></div>
+<div class="line"><p id="extern8"></p></div>
+<div class="line"><p id="extern9"></p></div>
+<div class="line"><p id="extern10"></p></div>
+<div class="line"><p id="extern11"></p></div>
+<div class="line"><p id="extern12"></p></div>
+<div class="line"><p id="extern13"></p></div>
+<div class="line"><p id="extern14"></p></div>
+<div class="line"><p id="extern15"></p></div>
+<div class="line"><p id="extern16"></p></div>
+<div class="line"><p id="extern17"></p></div>
+<div class="line"><p id="extern18"></p></div>
+<div class="line"><p id="extern19"></p></div>
+<div class="line"><p id="extern20"></p></div>
+void vexcodeInit(void);
+</div>

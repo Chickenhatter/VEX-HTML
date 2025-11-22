@@ -1,0 +1,12 @@
+.line{
+    white-space: nowrap;
+    line-height: 10%;
+    flex-wrap: nowrap;
+}
+.code{
+    line-height: 10%;
+    background-color:black;
+    color:aqua;
+    padding: top 100px;
+}
+

@@ -1,4 +1,4 @@
-<em></em>
+
 <head>
 <link rel="stylesheet" href="The.css"> 
 </head>
@@ -18,17 +18,41 @@
 <button id="button">
   Change wheels Motor #
 </button>
+<p id="message"></p>
+<pre>
 <script>
 function clickAction() {
-  MotorNum.textContent = wheel.value
   message.textContent = 'Good choice!'
-  if (wheel.value == '2'){
-    L1.textContent = 'Motor';
-    R2
-  }
+  Drive1.textContent = "      int drivetrainLeftSideSpeed = Controller1.Axis3.position() + Controller1.Axis1.position();"
+  Drive2.textContent = '      int drivetrainRightSideSpeed = Controller1.Axis3.position() - Controller1.Axis1.position();'
+  Drive3.textContent = '      if (drivetrainLeftSideSpeed &lt; 5 && drivetrainLeftSideSpeed &gt; -5) {'
+  Drive4.textContent = '        if (DrivetrainLNeedsToBeStopped_Controller1) {'
+  Drive5.textContent = '          LeftDriveSmart.stop();'
+  Drive6.textContent = '          DrivetrainLNeedsToBeStopped_Controller1 = false;'
+  Drive7.textContent = '        }'
+  Drive8.textContent = '      } else {'
+  Drive9.textContent = '        DrivetrainLNeedsToBeStopped_Controller1 = true;'
+  Drive10.textContent = '      }'
+  Drive11.textContent = '      if (drivetrainRightSideSpeed &lt; 5 && drivetrainRightSideSpeed &gt; -5) {'
+  Drive12.textContent = '        if (DrivetrainRNeedsToBeStopped_Controller1) {'
+  Drive13.textContent = '         RightDriveSmart.stop();'
+  Drive14.textContent = '         DrivetrainRNeedsToBeStopped_Controller1 = false;'
+  Drive15.textContent = '        }'
+  Drive16.textContent = '      } else {'
+  Drive17.textContent = '        DrivetrainRNeedsToBeStopped_Controller1 = true;'
+  Drive18.textContent = '      }'
+  Drive19.textContent = '      if (DrivetrainLNeedsToBeStopped_Controller1) {'
+  Drive20.textContent = '        LeftDriveSmart.setVelocity(drivetrainLeftSideSpeed, percent);'
+  Drive21.textContent = '       LeftDriveSmart.spin(forward);'
+  Drive22.textContent = '      }'
+  Drive23.textContent = '      if (DrivetrainRNeedsToBeStopped_Controller1) {'
+  Drive24.textContent = '        RightDriveSmart.setVelocity(drivetrainRightSideSpeed, percent);'
+  Drive25.textContent = '        RightDriveSmart.spin(forward);'
+  Drive26.textContent = '      }'
 }
 button.onclick = clickAction;
 </script>
+</pre>
 <h3>For each left motor add a motor</h3>
 <select id="lDrive">
   <option value="1">1</option>
@@ -413,10 +437,223 @@ button2.onclick = clickAction;
 <h2>Adding controls</h2>
 <p>The controller button, The motor that spins, the direction the motor spins</p>
 
+<select id="buttonController">
+  <option value="X">X</option>
+  <option value="Y">Y</option>
+  <option value="A">A</option>
+  <option value="B">B</option>
+  <option value="Left front">Left front</option>
+  <option value="Left back">Left back</option>
+  <option value="Right front">Right front</option>
+  <option value="Right back">Right back</option>
+  <option value="Up">Up</option>
+  <option value="Down">Down</option>
+  <option value="Left">Left</option>
+  <option value="Right">Right</option>
+</select>
+<select id="MotorController">
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+  <option value="4">4</option>
+  <option value="5">5</option>
+  <option value="6">6</option>
+  <option value="7">7</option>
+  <option value="8">8</option>
+  <option value="9">9</option>
+  <option value="10">10</option>
+  <option value="11">11</option>
+  <option value="12">12</option>
+  <option value="13">13</option>
+  <option value="14">14</option>
+  <option value="15">15</option>
+  <option value="16">16</option>
+  <option value="17">17</option>
+  <option value="18">18</option>
+  <option value="19">19</option>
+  <option value="20">20</option>
+  <option value="21">21</option>
+</select>
+<select id="FwdRev">
+  <option value="Forward">Forward</option>
+  <option value="Reverse">Reverse</option>
+</select>
+<button id="Controller">
+  Add the buttons for the robot
+</button>
+<script>
+function clickAction(){
+  if(buttonController.value == 'X'){
+    if(buttonController.value == 'Forward'){
+      if(buttonController.value == 'Y'){
+        
+      }
+      if(buttonController.value == 'A'){
+    
+      }
+      if(buttonController.value == 'B'){
+        
+      }
+      if(buttonController.value == 'Left front'){
+    
+      }
+      if(buttonController.value == 'Left back'){
+    
+      }
+      if(buttonController.value == 'Right front'){
+        
+      }
+      if(buttonController.value == 'Right back'){
 
+      }
+      if(buttonController.value == 'Up'){
 
+      }
+      if(buttonController.value == 'Down'){
+        
+      }
+      if(buttonController.value == 'Left'){
+        
+      }
+      if(buttonController.value == 'Right'){
+        
+     }
+    }
+    if(FwdRev.value == 'Reverse'){
+      if(buttonController.value == 'Y'){
+        
+      }
+      if(buttonController.value == 'A'){
+    
+      }
+      if(buttonController.value == 'B'){
+        
+      }
+      if(buttonController.value == 'Left front'){
+    
+      }
+      if(buttonController.value == 'Left back'){
+    
+      }
+      if(buttonController.value == 'Right front'){
+        
+      }
+      if(buttonController.value == 'Right back'){
 
+      }
+      if(buttonController.value == 'Up'){
 
+      }
+      if(buttonController.value == 'Down'){
+        
+      }
+      if(buttonController.value == 'Left'){
+        
+      }
+      if(buttonController.value == 'Right'){
+        
+      }
+    }
+  }
+  if(buttonController.value == 'X'){
+    foolXB.textContent = 'Controller1XBButtonsControlMotorsStopped = true;'
+    X.textContent = '       if (Controller1.ButtonX.pressing()) {'
+    X1.textContent = '      }'
+    X2.textContent = '       if (!Controller1XBButtonsControlMotorsStopped) {'
+    X3.textContent = '        Controller1XBButtonsControlMotorsStopped = true;'
+    X4.textContent = '       }'
+  }
+  if(buttonController.value == 'Y'){
+    foolYA.textContent = 'Controller1YAButtonsControlMotorsStopped = true;'
+    Y.textContent = '     if (Controller1.ButtonY.pressing()) {'
+    Y1.textContent = '      }'
+    Y2.textContent = '      else if (!Controller1YAButtonsControlMotorsStopped) {'
+    Y3.textContent = '        Controller1YAButtonsControlMotorsStopped = true;'
+    Y4.textContent = '       }'
+  }
+  if(buttonController.value == 'A'){
+    foolYA.textContent = 'Controller1YAButtonsControlMotorsStopped = true;'
+    A.textContent = '     if (Controller1.ButtonA.pressing()) {'
+    A1.textContent = '      }'
+    A2.textContent = '      if (!Controller1YAButtonsControlMotorsStopped) {'
+    A3.textContent = '        Controller1YAButtonsControlMotorsStopped = true;'
+    A4.textContent = '       }'
+  }
+  if(buttonController.value == 'B'){
+    foolXB.textContent = 'Controller1XBButtonsControlMotorsStopped = true;'
+    B.textContent = '     if (Controller1.ButtonB.pressing()) {'
+    B1.textContent = '      }'
+    B2.textContent = '      else if (!Controller1XBButtonsControlMotorsStopped) {'
+    B3.textContent = '        Controller1XBButtonsControlMotorsStopped = true;'
+    B4.textContent = '       }'
+  }
+  if(buttonController.value == 'Left front'){
+    foolLS.textContent = 'Controller1LeftShouldersControlMotorsStopped = true;'
+    Leftfront.textContent = '       if (Controller1.ButtonL1.pressing()) {'
+    Leftfront1.textContent = '      }'
+    Leftfront2.textContent = '      else if (!Controller1LeftShouldersControlMotorsStopped) {'
+    Leftfront3.textContent = '        Controller1LeftShouldersControlMotorsStopped = true;'
+    Leftfront4.textContent = '       }'
+  }
+  if(buttonController.value == 'Left back'){
+    foolLS.textContent = 'Controller1LeftShouldersControlMotorsStopped = true;'
+    Leftblack.textContent = '       if (Controller1.ButtonL2.pressing()) {'
+    Leftblack1.textContent = '       }'
+    Leftblack2.textContent = '       else if (!Controller1LeftShouldersControlMotorsStopped) {'
+    Leftblack3.textContent = '        Controller1LeftShouldersControlMotorsStopped = true;'
+    Leftblack4.textContent = '       }'
+  }
+  if(buttonController.value == 'Right front'){
+    foolRS.textContent = 'Controller1RightShouldersControlMotorsStopped = true;'
+    Rightfront.textContent = '       if (Controller1.ButtonR1.pressing()) {'
+    Rightfront1.textContent = '       }'
+    Rightfront2.textContent = '       else if (!Controller1RightShouldersControlMotorsStopped) {'
+    Rightfront3.textContent = '         Controller1RightShouldersControlMotorsStopped = true;'
+    Rightfront4.textContent = '       }'
+  }
+  if(buttonController.value == 'Right back'){
+    foolRS.textContent = 'Controller1RightShouldersControlMotorsStopped = true;'
+    Rightback.textContent = '       if (Controller1.ButtonR2.pressing()) {'
+    Rightfront1.textContent = '       }'
+    Rightfront2.textContent = '       if (!Controller1RightShouldersControlMotorsStopped) {'
+    Rightfront3.textContent = '         Controller1RightShouldersControlMotorsStopped = true;'
+    Rightfront4.textContent = '       }'
+  }
+  if(buttonController.value == 'Up'){
+    foolUD.textContent = 'Controller1UpDownButtonsControlMotorsStopped = true;'
+    Up.textContent = '       if (Controller1.ButtonL1.pressing()) {'
+    Up1.textContent = '       }'
+    Up2.textContent = '       else if (!Controller1UpDownButtonsControlMotorsStopped) {'
+    Up3.textContent = '         Controller1UpDownButtonsControlMotorsStopped = true;'
+    Up4.textContent = '       }'
+  }
+  if(buttonController.value == 'Down'){
+    foolUD.textContent = 'Controller1UpDownButtonsControlMotorsStopped = true;'
+    Down.textContent = 'if (Controller1.ButtonL1.pressing()) {'
+    Down1.textContent = '       }'
+    Down2.textContent = '       else if (!Controller1UpDownButtonsControlMotorsStopped) {'
+    Down3.textContent = '         Controller1UpDownButtonsControlMotorsStopped = true;'
+    Down4.textContent = '       }'
+  }
+  if(buttonController.value == 'Left'){
+    foolLR.textContent = 'Controller1LeftRightButtonsControlMotorsStopped = true;'
+    Left.textContent = '       if (Controller1.ButtonL1.pressing()) {'
+    Left1.textContent = '       }'
+    Left2.textContent = '       else if (!Controller1LeftRightButtonsControlMotorsStopped) {'
+    Left3.textContent = '         Controller1LeftRightButtonsControlMotorsStopped = true;'
+    Left4.textContent = '       }'
+  }
+  if(buttonController.value == 'Right'){
+    foolLR.textContent = 'Controller1LeftRightButtonsControlMotorsStopped = true;'
+    Right.textContent = '       if (Controller1.ButtonL1.pressing()) {'
+    Right1.textContent = '       }'
+    Right2.textContent = '       else if (!Controller1LeftRightButtonsControlMotorsStopped) {'
+    Right3.textContent = '        Controller1LeftRightButtonsControlMotorsStopped = true;'
+    Right4.textContent = '       }'
+  }
+}
+Controller.onclick = clickAction;
+</script>
 
 
 
@@ -632,9 +869,163 @@ This is the code
 <p>drivetrain Drivetrain = drivetrain(LeftDriveSmart, RightDriveSmart, 319.19, 295, 40, mm, 1);</p>
 
 <p>bool RemoteControlCodeEnabled = true;</p>
+<p id="foolLS"></p>
+<p id="foolRS"></p>
+<p id="foolXB"></p>
+<p id="foolYA"></P>
+<p id="foolUD"></p>
+<p id="foolLR"></p>
 <p>bool DrivetrainLNeedsToBeStopped_Controller1 = true;</p>
 <p>bool DrivetrainRNeedsToBeStopped_Controller1 = true;</p>
+<p>int rc_auto_loop_function_Controller1() {</p>
+<p>while(true) {</p>
+<p> &nbsp if(RemoteControlCodeEnabled) {</p>
+<pre><p id="Drive1"></p></pre>
+<pre><p id="Drive2"></p></pre>
+<pre><p id="Drive3"></p></pre>
+<pre><p id="Drive4"></p></pre>
+<pre><p id="Drive5"></p></pre>
+<pre><p id="Drive6"></p></pre>
+<pre><p id="Drive7"></p></pre>
+<pre><p id="Drive8"></p></pre>
+<pre><p id="Drive9"></p></pre>
+<pre><p id="Drive10"></p></pre>
+<pre><p id="Drive11"></p></pre>
+<pre><p id="Drive12"></p></pre>
+<pre><p id="Drive13"></p></pre>
+<pre><p id="Drive14"></p></pre>
+<pre><p id="Drive15"></p></pre>
+<pre><p id="Drive16"></p></pre>
+<pre><p id="Drive17"></p></pre>
+<pre><p id="Drive18"></p></pre>
+<pre><p id="Drive19"></p></pre>
+<pre><p id="Drive20"></p></pre>
+<pre><p id="Drive21"></p></pre>
+<pre><p id="Drive22"></p></pre>
+<pre><p id="Drive23"></p></pre>
+<pre><p id="Drive24"></p></pre>
+<pre><p id="Drive25"></p></pre>
+<pre><p id="Drive26"></p></pre>
+<pre><P id="X"></p></pre>
+
+<pre><p id="XM1"></p></pre>
+<pre><p id="XM2"></p></pre>
+<pre><p id="XM3"></p></pre>
+<pre><p id="XM4"></p></pre>
+<pre><p id="XM5"></p></pre>
+<pre><p id="XM6"></p></pre>
+<pre><p id="XM7"></p></pre>
+<pre><p id="XM8"></p></pre>
+<pre><p id="XM9"></p></pre>
+<pre><p id="XM10"></p></pre>
+<pre><p id="XM11"></p></pre>
+<pre><p id="XM12"></p></pre>
+<pre><p id="XM13"></p></pre>
+<pre><p id="XM14"></p></pre>
+<pre><p id="XM15"></p></pre>
+<pre><p id="XM16"></p></pre>
+<pre><p id="XM17"></p></pre>
+<pre><p id="XM18"></p></pre>
+<pre><p id="XM19"></p></pre>
+<pre><p id="XM20"></p></pre>
+<pre><p id="XM21"></p></pre>
+
+<pre><P id="X1"></p></pre>
+<pre><P id="X2"></p></pre>
+<pre><P id="X3"></p></pre>
+<pre><P id="X4"></p></pre>
+<pre><p id="Y"></p></pre>
+
+<pre><p id="Y1"></p></pre>
+<pre><p id="Y2"></p></pre>
+<pre><p id="Y3"></p></pre>
+<pre><p id="Y4"></p></pre>
+<pre><p id="A"></p></pre>
+
+<pre><p id="A1"></p></pre>
+<pre><p id="A2"></p></pre>
+<pre><p id="A3"></p></pre>
+<pre><p id="A4"></p></pre>
+<pre><p id="B"></p></pre>
+
+<pre><p id="B1"></p></pre>
+<pre><p id="B2"></p></pre>
+<pre><p id="B3"></p></pre>
+<pre><p id="B4"></p></pre>
+<pre><p id="Leftfront"></p></pre>
+
+<pre><p id="Leftfront1"></p></pre>
+<pre><p id="Leftfront2"></p></pre>
+<pre><p id="Leftfront3"></p></pre>
+<pre><p id="Leftfront4"></p></pre>
+<pre><p id="Leftback"></p></pre>
+
+<pre><p id="Leftback1"></p></pre>
+<pre><p id="Leftback2"></p></pre>
+<pre><p id="Leftback3"></p></pre>
+<pre><p id="Leftback4"></p></pre>
+<pre><p id="Rightfront"></p></pre>
+
+<pre><p id="Rightfront1"></p></pre>
+<pre><p id="Rightfront2"></p></pre>
+<pre><p id="Rightfront3"></p></pre>
+<pre><p id="Rightfront4"></p></pre>
+<pre><p id="Rightback"></p></pre>
+
+<pre><p id="Rightback1"></p></pre>
+<pre><p id="Rightback2"></p></pre>
+<pre><p id="Rightback3"></p></pre>
+<pre><p id="Rightback4"></p></pre>
+<pre><p id="Up"></p></pre>
+
+<pre><p id="Up1"></p></pre>
+<pre><p id="Up2"></p></pre>
+<pre><p id="Up3"></p></pre>
+<pre><p id="Up4"></p></pre>
+<pre><p id="Down"></p></pre>
+
+<pre><p id="Down1"></p></pre>
+<pre><p id="Down2"></p></pre>
+<pre><p id="Down3"></p></pre>
+<pre><p id="Down4"></p></pre>
+<pre><p id="Left"></p></pre>
+
+<pre><p id="Left1"></p></pre>
+<pre><p id="Left2"></p></pre>
+<pre><p id="Left3"></p></pre>
+<pre><p id="Left4"></p></pre>
+<pre><p id="Right"></p></pre>
+
+<pre><p id="Right1"></p></pre>
+<pre><p id="Right2"></p></pre>
+<pre><p id="Right3"></p></pre>
+<pre><p id="Right4"></p></pre>
+<p>&nbsp &nbsp}</p>
+<p>&nbspwait(20, msec);</p>
+<p>&nbsp}</p>
+<p>&nbspreturn 0;</p>
+<p>}</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
 </div>
+
+
+
+
+
+
+
 
 
 <h2>In robot-config.h</h2>
@@ -666,4 +1057,4 @@ This is the code
 <div class="line"><p id="extern19"></p></div>
 <div class="line"><p id="extern20"></p></div>
 void vexcodeInit(void);
-</div>
+

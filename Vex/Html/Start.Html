@@ -2,12 +2,14 @@
 <head>
 <link rel="stylesheet" href="The.css"> 
 </head>
-<h1>Hello people who are starting to get into vex robotics</h1>
-<h3>This website is to help you get started with vex robotis coding by giving you a template that you can add code to when you get good.</h3>
-<h3>Yes</h3>
+<h1>For people who are starting to get into vex robotics</h1>
+<h3>This website is to help you get started with vex robotis coding by giving you a template that will work for the robot.</h3>
+<h3>This gives you the code needed for the robot and the places you will need to get this on your robot are the offical extensions for vex robotics like in VS code or Vexcode V5</h3>
+
+
 <h1>The Quiz</h1>
 <h2>The drivetrain</h2>
-<p>What is the number of motors for the drivetrain?</p>
+<h3>What is the number of motors for the drivetrain?</h3>
 
 <select id="wheel">
   <option value="2">2</option>
@@ -32,9 +34,9 @@ function clickAction() {
   Drive7.textContent = '        }'
   Drive8.textContent = '      } else {'
   Drive9.textContent = '        DrivetrainLNeedsToBeStopped_Controller1 = true;'
-  Drive10.textContent = '      }'
-  Drive11.textContent = '      if (drivetrainRightSideSpeed &lt; 5 && drivetrainRightSideSpeed &gt; -5) {'
-  Drive12.textContent = '        if (DrivetrainRNeedsToBeStopped_Controller1) {'
+  Drive10.textContent = '     }'
+  Drive11.textContent = '     if (drivetrainRightSideSpeed &lt; 5 && drivetrainRightSideSpeed &gt; -5) {'
+  Drive12.textContent = '       if (DrivetrainRNeedsToBeStopped_Controller1) {'
   Drive13.textContent = '         RightDriveSmart.stop();'
   Drive14.textContent = '         DrivetrainRNeedsToBeStopped_Controller1 = false;'
   Drive15.textContent = '        }'
@@ -483,80 +485,2082 @@ button2.onclick = clickAction;
 </button>
 <script>
 function clickAction(){
-  if(buttonController.value == 'X'){
-    if(buttonController.value == 'Forward'){
+    if(FwdRev.value == 'Forward'){
       if(buttonController.value == 'Y'){
-        
+        if(MotorController.value == '1'){
+          Ym1.textContent = '       Motor1.spin(forward);'
+          YmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Ym2.textContent = '        Motor2.spin(forward);'
+          YmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Ym3.textContent = '        Motor3.spin(forward);'
+          YmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Ym4.textContent = '        Motor4.spin(forward);'
+          YmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Ym5.textContent = '        Motor5.spin(forward);'
+          YmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Ym6.textContent = '        Motor6.spin(forward);'
+          YmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Ym7.textContent = '        Motor7.spin(forward);'
+          YmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Ym8.textContent = '        Motor8.spin(forward);'
+          YmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Ym9.textContent = '        Motor9.spin(forward);'
+          YmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Ym10.textContent = '        Motor10.spin(forward);'
+          YmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Ym11.textContent = '        Motor11.spin(forward);'
+          YmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Ym12.textContent = '        Motor12.spin(forward);'
+          YmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Ym13.textContent = '        Motor13.spin(forward);'
+          YmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Ym14.textContent = '        Motor14.spin(forward);'
+          YmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Ym15.textContent = '        Motor15.spin(forward);'
+          YmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Ym16.textContent = '        Motor16.spin(forward);'
+          YmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Ym17.textContent = '        Motor17.spin(forward);'
+          YmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Ym18.textContent = '        Motor18.spin(forward);'
+          YmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Ym19.textContent = '        Motor19.spin(forward);'
+          YmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Ym20.textContent = '        Motor20.spin(forward);'
+          YmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Ym21.textContent = '        Motor21.spin(forward);'
+          YmS21.textContent = '        Motor21.stop();'
+        }
+      }
+      if(buttonController.value == 'X'){
+        if(MotorController.value == '1'){
+          Xm1.textContent = '        Motor1.spin(forward);'
+          XmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Xm2.textContent = '        Motor2.spin(forward);'
+          XmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Xm3.textContent = '        Motor3.spin(forward);'
+          XmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Xm4.textContent = '        Motor4.spin(forward);'
+          XmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Xm5.textContent = '        Motor5.spin(forward);'
+          XmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Xm6.textContent = '        Motor6.spin(forward);'
+          XmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Xm7.textContent = '        Motor7.spin(forward);'
+          XmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Xm8.textContent = '        Motor8.spin(forward);'
+          XmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Xm9.textContent = '        Motor9.spin(forward);'
+          XmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Xm10.textContent = '        Motor10.spin(forward);'
+          XmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Xm11.textContent = '        Motor11.spin(forward);'
+          XmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Xm12.textContent = '        Motor12.spin(forward);'
+          XmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Xm13.textContent = '        Motor13.spin(forward);'
+          XmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Xm14.textContent = '        Motor14.spin(forward);'
+          XmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Xm15.textContent = '        Motor15.spin(forward);'
+          XmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Xm16.textContent = '        Motor16.spin(forward);'
+          XmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Xm17.textContent = '        Motor17.spin(forward);'
+          XmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Xm18.textContent = '        Motor18.spin(forward);'
+          XmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Xm19.textContent = '        Motor19.spin(forward);'
+          XmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Xm20.textContent = '        Motor20.spin(forward);'
+          XmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Xm21.textContent = '        Motor21.spin(forward);'
+          XmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'A'){
-    
+          if(MotorController.value == '1'){
+          Am1.textContent = '        Motor1.spin(forward);'
+          AmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Am2.textContent = '        Motor2.spin(forward);'
+          AmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Am3.textContent = '        Motor3.spin(forward);'
+          AmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Am4.textContent = '        Motor4.spin(forward);'
+          AmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Am5.textContent = '        Motor5.spin(forward);'
+          AmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Am6.textContent = '        Motor6.spin(forward);'
+          AmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Am7.textContent = '        Motor7.spin(forward);'
+          AmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Am8.textContent = '        Motor8.spin(forward);'
+          AmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Am9.textContent = '        Motor9.spin(forward);'
+          AmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Am10.textContent = '        Motor10.spin(forward);'
+          AmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Am11.textContent = '        Motor11.spin(forward);'
+          AmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Am12.textContent = '        Motor12.spin(forward);'
+          AmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Am13.textContent = '        Motor13.spin(forward);'
+          AmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Am14.textContent = '        Motor14.spin(forward);'
+          AmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Am15.textContent = '        Motor15.spin(forward);'
+          AmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Am16.textContent = '        Motor16.spin(forward);'
+          AmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Am17.textContent = '        Motor17.spin(forward);'
+          AmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Am18.textContent = '        Motor18.spin(forward);'
+          AmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Am19.textContent = '        Motor19.spin(forward);'
+          AmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Am20.textContent = '        Motor20.spin(forward);'
+          AmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Am21.textContent = '        Motor21.spin(forward);'
+          AmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'B'){
-        
+        if(MotorController.value == '1'){
+          Bm1.textContent = '        Motor1.spin(forward);'
+          BmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Bm2.textContent = '        Motor2.spin(forward);'
+          BmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Bm3.textContent = '        Motor3.spin(forward);'
+          BmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Bm4.textContent = '        Motor4.spin(forward);'
+          BmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Bm5.textContent = '        Motor5.spin(forward);'
+          BmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Bm6.textContent = '        Motor6.spin(forward);'
+          BmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Bm7.textContent = '        Motor7.spin(forward);'
+          BmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Bm8.textContent = '        Motor8.spin(forward);'
+          BmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Bm9.textContent = '        Motor9.spin(forward);'
+          BmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Bm10.textContent = '        Motor10.spin(forward);'
+          BmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Bm11.textContent = '        Motor11.spin(forward);'
+          BmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Bm12.textContent = '        Motor12.spin(forward);'
+          BmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Bm13.textContent = '        Motor13.spin(forward);'
+          BmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Bm14.textContent = '        Motor14.spin(forward);'
+          BmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Bm15.textContent = '        Motor15.spin(forward);'
+          BmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Bm16.textContent = '        Motor16.spin(forward);'
+          BmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Bm17.textContent = '        Motor17.spin(forward);'
+          BmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Bm18.textContent = '        Motor18.spin(forward);'
+          BmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Bm19.textContent = '        Motor19.spin(forward);'
+          BmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Bm20.textContent = '        Motor20.spin(forward);'
+          BmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Bm21.textContent = '        Motor21.spin(forward);'
+          BmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Left front'){
+                if(MotorController.value == '1'){
+          Leftfrontm1.textContent = '        Motor1.spin(forward);'
+          LeftfrontmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Leftfrontm2.textContent = '        Motor2.spin(forward);'
+          LeftfrontmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Leftfrontm3.textContent = '        Motor3.spin(forward);'
+          LeftfrontmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Leftfrontm4.textContent = '        Motor4.spin(forward);'
+          LeftfrontmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Leftfrontm5.textContent = '        Motor5.spin(forward);'
+          LeftfrontmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Leftfrontm6.textContent = '        Motor6.spin(forward);'
+          LeftfrontmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Leftfrontm7.textContent = '        Motor7.spin(forward);'
+          LeftfrontmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Leftfrontm8.textContent = '        Motor8.spin(forward);'
+          LeftfrontmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Leftfrontm9.textContent = '        Motor9.spin(forward);'
+          LeftfrontmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Leftfrontm10.textContent = '        Motor10.spin(forward);'
+          LeftfrontmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Leftfrontm11.textContent = '        Motor11.spin(forward);'
+          LeftfrontmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Leftfrontm12.textContent = '        Motor12.spin(forward);'
+          LeftfrontmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Leftfrontm13.textContent = '        Motor13.spin(forward);'
+          LeftfrontmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Leftfrontm14.textContent = '        Motor14.spin(forward);'
+          LeftfrontmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Leftfrontm15.textContent = '        Motor15.spin(forward);'
+          LeftfrontmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Leftfrontm16.textContent = '        Motor16.spin(forward);'
+          LeftfrontmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Leftfrontm17.textContent = '        Motor17.spin(forward);'
+          LeftfrontmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Leftfrontm18.textContent = '        Motor18.spin(forward);'
+          LeftfrontmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Leftfrontm19.textContent = '        Motor19.spin(forward);'
+          LeftfrontmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Leftfrontm20.textContent = '        Motor20.spin(forward);'
+          LeftfrontmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Leftfrontm21.textContent = '        Motor21.spin(forward);'
+          LeftfrontmS21.textContent = '        Motor21.stop();'
+        }
     
       }
       if(buttonController.value == 'Left back'){
-    
+        if(MotorController.value == '1'){
+          Leftbackm1.textContent = '        Motor1.spin(forward);'
+          LeftbackmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Leftbackm2.textContent = '        Motor2.spin(forward);'
+          LeftbackmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Leftbackm3.textContent = '        Motor3.spin(forward);'
+          LeftbackmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Leftbackm4.textContent = '        Motor4.spin(forward);'
+          LeftbackmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Leftbackm5.textContent = '        Motor5.spin(forward);'
+          LeftbackmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Leftbackm6.textContent = '        Motor6.spin(forward);'
+          LeftbackmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Leftbackm7.textContent = '        Motor7.spin(forward);'
+          LeftbackmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Leftbackm8.textContent = '        Motor8.spin(forward);'
+          LeftbackmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Leftbackm9.textContent = '        Motor9.spin(forward);'
+          LeftbackmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Leftbackm10.textContent = '        Motor10.spin(forward);'
+          LeftbackmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Leftbackm11.textContent = '        Motor11.spin(forward);'
+          LeftbackmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Leftbackm12.textContent = '        Motor12.spin(forward);'
+          LeftbackmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Leftbackm13.textContent = '        Motor13.spin(forward);'
+          LeftbackmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Leftbackm14.textContent = '        Motor14.spin(forward);'
+          LeftbackmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Leftbackm15.textContent = '        Motor15.spin(forward);'
+          LeftbackmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Leftbackm16.textContent = '        Motor16.spin(forward);'
+          LeftbackmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Leftbackm17.textContent = '        Motor17.spin(forward);'
+          LeftbackmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Leftbackm18.textContent = '        Motor18.spin(forward);'
+          LeftbackmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Leftbackm19.textContent = '        Motor19.spin(forward);'
+          LeftbackmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Leftbackm20.textContent = '        Motor20.spin(forward);'
+          LeftbackmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Leftbackm21.textContent = '        Motor21.spin(forward);'
+          LeftbackmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Right front'){
-        
+        if(MotorController.value == '1'){ 
+          Rightfrontm1.textContent = '        Motor1.spin(forward);'
+          RightfrontmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Rightfrontm2.textContent = '        Motor2.spin(forward);'
+          RightfrontmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Rightfrontm3.textContent = '        Motor3.spin(forward);'
+          RightfrontmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Rightfrontm4.textContent = '        Motor4.spin(forward);'
+          RightfrontmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Rightfrontm5.textContent = '        Motor5.spin(forward);'
+          RightfrontmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Rightfrontm6.textContent = '        Motor6.spin(forward);'
+          RightfrontmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Rightfrontm7.textContent = '        Motor7.spin(forward);'
+          RightfrontmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Rightfrontm8.textContent = '        Motor8.spin(forward);'
+          RightfrontmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Rightfrontm9.textContent = '        Motor9.spin(forward);'
+          RightfrontmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Rightfrontm10.textContent = '        Motor10.spin(forward);'
+          RightfrontmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Rightfrontm11.textContent = '        Motor11.spin(forward);'
+          RightfrontmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Rightfrontm12.textContent = '        Motor12.spin(forward);'
+          RightfrontmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Rightfrontm13.textContent = '        Motor13.spin(forward);'
+          RightfrontmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Rightfrontm14.textContent = '        Motor14.spin(forward);'
+          RightfrontmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Rightfrontm15.textContent = '        Motor15.spin(forward);'
+          RightfrontmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Rightfrontm16.textContent = '        Motor16.spin(forward);'
+          RightfrontmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Rightfrontm17.textContent = '        Motor17.spin(forward);'
+          RightfrontmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Rightfrontm18.textContent = '        Motor18.spin(forward);'
+          RightfrontmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Rightfrontm19.textContent = '        Motor19.spin(forward);'
+          RightfrontmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Rightfrontm20.textContent = '        Motor20.spin(forward);'
+          RightfrontmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Rightfrontm21.textContent = '        Motor21.spin(forward);'
+          RightfrontmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Right back'){
+        if(MotorController.value == '1'){ 
+          Rightbackm1.textContent = '        Motor1.spin(forward);'
+          RightbackmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Rightbackm2.textContent = '        Motor2.spin(forward);'
+          RightbackmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Rightbackm3.textContent = '        Motor3.spin(forward);'
+          RightbackmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Rightbackm4.textContent = '        Motor4.spin(forward);'
+          RightbackmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Rightbackm5.textContent = '        Motor5.spin(forward);'
+          RightbackmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Rightbackm6.textContent = '        Motor6.spin(forward);'
+          RightbackmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Rightbackm7.textContent = '        Motor7.spin(forward);'
+          RightbackmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Rightbackm8.textContent = '        Motor8.spin(forward);'
+          RightbackmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Rightbackm9.textContent = '        Motor9.spin(forward);'
+          RightbackmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Rightbackm10.textContent = '        Motor10.spin(forward);'
+          RightbackmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Rightbackm11.textContent = '        Motor11.spin(forward);'
+          RightbackmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Rightbackm12.textContent = '        Motor12.spin(forward);'
+          RightbackmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Rightbackm13.textContent = '        Motor13.spin(forward);'
+          RightbackmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Rightbackm14.textContent = '        Motor14.spin(forward);'
+          RightbackmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Rightbackm15.textContent = '        Motor15.spin(forward);'
+          RightbackmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Rightbackm16.textContent = '        Motor16.spin(forward);'
+          RightbackmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Rightbackm17.textContent = '        Motor17.spin(forward);'
+          RightbackmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Rightbackm18.textContent = '        Motor18.spin(forward);'
+          RightbackmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Rightbackm19.textContent = '        Motor19.spin(forward);'
+          RightbackmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Rightbackm20.textContent = '        Motor20.spin(forward);'
+          RightbackmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Rightbackm21.textContent = '        Motor21.spin(forward);'
+          RightbackmS21.textContent = '        Motor21.stop();'
+        }
 
       }
       if(buttonController.value == 'Up'){
+        if(MotorController.value == '1'){
+          Upm1.textContent = '        Motor1.spin(forward);'
+          UpmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Upm2.textContent = '        Motor2.spin(forward);'
+          UpmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Upm3.textContent = '        Motor3.spin(forward);'
+          UpmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Upm4.textContent = '        Motor4.spin(forward);'
+          UpmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Upm5.textContent = '        Motor5.spin(forward);'
+          UpmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Upm6.textContent = '        Motor6.spin(forward);'
+          UpmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Upm7.textContent = '        Motor7.spin(forward);'
+          UpmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Upm8.textContent = '        Motor8.spin(forward);'
+          UpmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Upm9.textContent = '        Motor9.spin(forward);'
+          UpmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Upm10.textContent = '        Motor10.spin(forward);'
+          UpmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Upm11.textContent = '        Motor11.spin(forward);'
+          UpmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Upm12.textContent = '        Motor12.spin(forward);'
+          UpmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Upm13.textContent = '        Motor13.spin(forward);'
+          UpmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Upm14.textContent = '        Motor14.spin(forward);'
+          UpmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Upm15.textContent = '        Motor15.spin(forward);'
+          UpmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Upm16.textContent = '        Motor16.spin(forward);'
+          UpmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Upm17.textContent = '        Motor17.spin(forward);'
+          UpmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Upm18.textContent = '        Motor18.spin(forward);'
+          UpmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Upm19.textContent = '        Motor19.spin(forward);'
+          UpmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Upm20.textContent = '        Motor20.spin(forward);'
+          UpmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Upm21.textContent = '        Motor21.spin(forward);'
+          UpmS21.textContent = '        Motor21.stop();'
+        }
 
       }
       if(buttonController.value == 'Down'){
-        
+        if(MotorController.value == '1'){
+          Downm1.textContent = '        Motor1.spin(forward);'
+          DownmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Downm2.textContent = '        Motor2.spin(forward);'
+          DownmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Downm3.textContent = '        Motor3.spin(forward);'
+          DownmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Downm4.textContent = '        Motor4.spin(forward);'
+          DownmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Downm5.textContent = '        Motor5.spin(forward);'
+          DownmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Downm6.textContent = '        Motor6.spin(forward);'
+          DownmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Downm7.textContent = '        Motor7.spin(forward);'
+          DownmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Downm8.textContent = '        Motor8.spin(forward);'
+          DownmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Downm9.textContent = '        Motor9.spin(forward);'
+          DownmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Downm10.textContent = '        Motor10.spin(forward);'
+          DownmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Downm11.textContent = '        Motor11.spin(forward);'
+          DownmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Downm12.textContent = '        Motor12.spin(forward);'
+          DownmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Downm13.textContent = '        Motor13.spin(forward);'
+          DownmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Downm14.textContent = '        Motor14.spin(forward);'
+          DownmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Downm15.textContent = '        Motor15.spin(forward);'
+          DownmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Downm16.textContent = '        Motor16.spin(forward);'
+          DownmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Downm17.textContent = '        Motor17.spin(forward);'
+          DownmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Downm18.textContent = '        Motor18.spin(forward);'
+          DownmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Downm19.textContent = '        Motor19.spin(forward);'
+          DownmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Downm20.textContent = '        Motor20.spin(forward);'
+          DownmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Downm21.textContent = '        Motor21.spin(forward);'
+          DownmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Left'){
-        
+        if(MotorController.value == '1'){
+          Leftm1.textContent = '        Motor1.spin(forward);'
+          LeftmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Leftm2.textContent = '        Motor2.spin(forward);'
+          LeftmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Leftm3.textContent = '        Motor3.spin(forward);'
+          LeftmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Leftm4.textContent = '        Motor4.spin(forward);'
+          LeftmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Leftm5.textContent = '        Motor5.spin(forward);'
+          LeftmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Leftm6.textContent = '        Motor6.spin(forward);'
+          LeftmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Leftm7.textContent = '        Motor7.spin(forward);'
+          LeftmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Leftm8.textContent = '        Motor8.spin(forward);'
+          LeftmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Leftm9.textContent = '        Motor9.spin(forward);'
+          LeftmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Leftm10.textContent = '        Motor10.spin(forward);'
+          LeftmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Leftm11.textContent = '        Motor11.spin(forward);'
+          LeftmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Leftm12.textContent = '        Motor12.spin(forward);'
+          LeftmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Leftm13.textContent = '        Motor13.spin(forward);'
+          LeftmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Leftm14.textContent = '        Motor14.spin(forward);'
+          LeftmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Leftm15.textContent = '        Motor15.spin(forward);'
+          LeftmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Leftm16.textContent = '        Motor16.spin(forward);'
+          LeftmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Leftm17.textContent = '        Motor17.spin(forward);'
+          LeftmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Leftm18.textContent = '        Motor18.spin(forward);'
+          LeftmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Leftm19.textContent = '        Motor19.spin(forward);'
+          LeftmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Leftm20.textContent = '        Motor20.spin(forward);'
+          LeftmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Leftm21.textContent = '        Motor21.spin(forward);'
+          LeftmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Right'){
-        
+        if(MotorController.value == '1'){
+          Rightm1.textContent = '        Motor1.spin(forward);'
+          RightmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Rightm2.textContent = '        Motor2.spin(forward);'
+          RightmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Rightm3.textContent = '        Motor3.spin(forward);'
+          RightmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Rightm4.textContent = '        Motor4.spin(forward);'
+          RightmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Rightm5.textContent = '        Motor5.spin(forward);'
+          RightmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Rightm6.textContent = '        Motor6.spin(forward);'
+          RightmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Rightm7.textContent = '        Motor7.spin(forward);'
+          RightmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Rightm8.textContent = '        Motor8.spin(forward);'
+          RightmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Rightm9.textContent = '        Motor9.spin(forward);'
+          RightmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Rightm10.textContent = '        Motor10.spin(forward);'
+          RightmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Rightm11.textContent = '        Motor11.spin(forward);'
+          RightmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Rightm12.textContent = '        Motor12.spin(forward);'
+          RightmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Rightm13.textContent = '        Motor13.spin(forward);'
+          RightmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Rightm14.textContent = '        Motor14.spin(forward);'
+          RightmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Rightm15.textContent = '        Motor15.spin(forward);'
+          RightmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Rightm16.textContent = '        Motor16.spin(forward);'
+          RightmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Rightm17.textContent = '        Motor17.spin(forward);'
+          RightmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Rightm18.textContent = '        Motor18.spin(forward);'
+          RightmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Rightm19.textContent = '        Motor19.spin(forward);'
+          RightmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Rightm20.textContent = '        Motor20.spin(forward);'
+          RightmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Rightm21.textContent = '        Motor21.spin(forward);'
+          RightmS21.textContent = '        Motor21.stop();'
+        }
      }
     }
     if(FwdRev.value == 'Reverse'){
       if(buttonController.value == 'Y'){
-        
+        if(MotorController.value == '1'){
+          Ym1.textContent = '        Motor1.spin(reverse);'
+          YmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Ym2.textContent = '        Motor2.spin(reverse);'
+          YmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Ym3.textContent = '        Motor3.spin(reverse);'
+          YmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Ym4.textContent = '        Motor4.spin(reverse);'
+          YmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Ym5.textContent = '        Motor5.spin(reverse);'
+          YmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Ym6.textContent = '        Motor6.spin(reverse);'
+          YmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Ym7.textContent = '        Motor7.spin(reverse);'
+          YmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Ym8.textContent = '        Motor8.spin(reverse);'
+          YmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Ym9.textContent = '        Motor9.spin(reverse);'
+          YmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Ym10.textContent = '        Motor10.spin(reverse);'
+          YmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Ym11.textContent = '        Motor11.spin(reverse);'
+          YmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Ym12.textContent = '        Motor12.spin(reverse);'
+          YmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Ym13.textContent = '        Motor13.spin(reverse);'
+          YmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Ym14.textContent = '        Motor14.spin(reverse);'
+          YmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Ym15.textContent = '        Motor15.spin(reverse);'
+          YmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Ym16.textContent = '        Motor16.spin(reverse);'
+          YmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Ym17.textContent = '        Motor17.spin(reverse);'
+          YmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Ym18.textContent = '        Motor18.spin(reverse);'
+          YmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Ym19.textContent = '        Motor19.spin(reverse);'
+          YmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Ym20.textContent = '        Motor20.spin(reverse);'
+          YmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Ym21.textContent = '        Motor21.spin(reverse);'
+          YmS21.textContent = '        Motor21.stop();'
+        }
+      }
+      if(buttonController.value == 'X'){
+        if(MotorController.value == '1'){
+          Xm1.textContent = '        Motor1.spin(reverse);'
+          XmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Xm2.textContent = '        Motor2.spin(reverse);'
+          XmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Xm3.textContent = '        Motor3.spin(reverse);'
+          XmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Xm4.textContent = '        Motor4.spin(reverse);'
+          XmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Xm5.textContent = '        Motor5.spin(reverse);'
+          XmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Xm6.textContent = '        Motor6.spin(reverse);'
+          XmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Xm7.textContent = '        Motor7.spin(reverse);'
+          XmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Xm8.textContent = '        Motor8.spin(reverse);'
+          XmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Xm9.textContent = '        Motor9.spin(reverse);'
+          XmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Xm10.textContent = '        Motor10.spin(reverse);'
+          XmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Xm11.textContent = '        Motor11.spin(reverse);'
+          XmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Xm12.textContent = '        Motor12.spin(reverse);'
+          XmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Xm13.textContent = '        Motor13.spin(reverse);'
+          XmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Xm14.textContent = '        Motor14.spin(reverse);'
+          XmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Xm15.textContent = '        Motor15.spin(reverse);'
+          XmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Xm16.textContent = '        Motor16.spin(reverse);'
+          XmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Xm17.textContent = '        Motor17.spin(reverse);'
+          XmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Xm18.textContent = '        Motor18.spin(reverse);'
+          XmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Xm19.textContent = '        Motor19.spin(reverse);'
+          XmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Xm20.textContent = '        Motor20.spin(reverse);'
+          XmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Xm21.textContent = '        Motor21.spin(reverse);'
+          XmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'A'){
-    
+          if(MotorController.value == '1'){
+          Am1.textContent = '        Motor1.spin(reverse);'
+          AmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Am2.textContent = '        Motor2.spin(reverse);'
+          AmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Am3.textContent = '        Motor3.spin(reverse);'
+          AmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Am4.textContent = '        Motor4.spin(reverse);'
+          AmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Am5.textContent = '        Motor5.spin(reverse);'
+          AmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Am6.textContent = '        Motor6.spin(reverse);'
+          AmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Am7.textContent = '        Motor7.spin(reverse);'
+          AmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Am8.textContent = '        Motor8.spin(reverse);'
+          AmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Am9.textContent = '        Motor9.spin(reverse);'
+          AmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Am10.textContent = '        Motor10.spin(reverse);'
+          AmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Am11.textContent = '        Motor11.spin(reverse);'
+          AmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Am12.textContent = '        Motor12.spin(reverse);'
+          AmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Am13.textContent = '        Motor13.spin(reverse);'
+          AmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Am14.textContent = '        Motor14.spin(reverse);'
+          AmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Am15.textContent = '        Motor15.spin(reverse);'
+          AmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Am16.textContent = '        Motor16.spin(reverse);'
+          AmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Am17.textContent = '        Motor17.spin(reverse);'
+          AmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Am18.textContent = '        Motor18.spin(reverse);'
+          AmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Am19.textContent = '        Motor19.spin(reverse);'
+          AmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Am20.textContent = '        Motor20.spin(reverse);'
+          AmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Am21.textContent = '        Motor21.spin(reverse);'
+          AmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'B'){
-        
+        if(MotorController.value == '1'){
+          Bm1.textContent = '        Motor1.spin(reverse);'
+          BmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Bm2.textContent = '        Motor2.spin(reverse);'
+          BmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Bm3.textContent = '        Motor3.spin(reverse);'
+          BmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Bm4.textContent = '        Motor4.spin(reverse);'
+          BmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Bm5.textContent = '        Motor5.spin(reverse);'
+          BmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Bm6.textContent = '        Motor6.spin(reverse);'
+          BmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Bm7.textContent = '        Motor7.spin(reverse);'
+          BmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Bm8.textContent = '        Motor8.spin(reverse);'
+          BmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Bm9.textContent = '        Motor9.spin(reverse);'
+          BmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Bm10.textContent = '        Motor10.spin(reverse);'
+          BmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Bm11.textContent = '        Motor11.spin(reverse);'
+          BmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Bm12.textContent = '        Motor12.spin(reverse);'
+          BmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Bm13.textContent = '        Motor13.spin(reverse);'
+          BmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Bm14.textContent = '        Motor14.spin(reverse);'
+          BmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Bm15.textContent = '        Motor15.spin(reverse);'
+          BmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Bm16.textContent = '        Motor16.spin(reverse);'
+          BmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Bm17.textContent = '        Motor17.spin(reverse);'
+          BmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Bm18.textContent = '        Motor18.spin(reverse);'
+          BmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Bm19.textContent = '        Motor19.spin(reverse);'
+          BmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Bm20.textContent = '        Motor20.spin(reverse);'
+          BmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Bm21.textContent = '        Motor21.spin(reverse);'
+          BmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Left front'){
+                if(MotorController.value == '1'){
+          Leftfrontm1.textContent = '        Motor1.spin(reverse);'
+          LeftfrontmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Leftfrontm2.textContent = '        Motor2.spin(reverse);'
+          LeftfrontmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Leftfrontm3.textContent = '        Motor3.spin(reverse);'
+          LeftfrontmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Leftfrontm4.textContent = '        Motor4.spin(reverse);'
+          LeftfrontmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Leftfrontm5.textContent = '        Motor5.spin(reverse);'
+          LeftfrontmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Leftfrontm6.textContent = '        Motor6.spin(reverse);'
+          LeftfrontmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Leftfrontm7.textContent = '        Motor7.spin(reverse);'
+          LeftfrontmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Leftfrontm8.textContent = '        Motor8.spin(reverse);'
+          LeftfrontmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Leftfrontm9.textContent = '        Motor9.spin(reverse);'
+          LeftfrontmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Leftfrontm10.textContent = '        Motor10.spin(reverse);'
+          LeftfrontmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Leftfrontm11.textContent = '        Motor11.spin(reverse);'
+          LeftfrontmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Leftfrontm12.textContent = '        Motor12.spin(reverse);'
+          LeftfrontmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Leftfrontm13.textContent = '        Motor13.spin(reverse);'
+          LeftfrontmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Leftfrontm14.textContent = '        Motor14.spin(reverse);'
+          LeftfrontmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Leftfrontm15.textContent = '        Motor15.spin(reverse);'
+          LeftfrontmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Leftfrontm16.textContent = '        Motor16.spin(reverse);'
+          LeftfrontmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Leftfrontm17.textContent = '        Motor17.spin(reverse);'
+          LeftfrontmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Leftfrontm18.textContent = '        Motor18.spin(reverse);'
+          LeftfrontmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Leftfrontm19.textContent = '        Motor19.spin(reverse);'
+          LeftfrontmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Leftfrontm20.textContent = '        Motor20.spin(reverse);'
+          LeftfrontmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Leftfrontm21.textContent = '        Motor21.spin(reverse);'
+          LeftfrontmS21.textContent = '        Motor21.stop();'
+        }
     
       }
       if(buttonController.value == 'Left back'){
-    
+        if(MotorController.value == '1'){
+          Leftbackm1.textContent = '        Motor1.spin(reverse);'
+          LeftbackmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Leftbackm2.textContent = '        Motor2.spin(reverse);'
+          LeftbackmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Leftbackm3.textContent = '        Motor3.spin(reverse);'
+          LeftbackmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Leftbackm4.textContent = '        Motor4.spin(reverse);'
+          LeftbackmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Leftbackm5.textContent = '        Motor5.spin(reverse);'
+          LeftbackmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Leftbackm6.textContent = '        Motor6.spin(reverse);'
+          LeftbackmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Leftbackm7.textContent = '        Motor7.spin(reverse);'
+          LeftbackmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Leftbackm8.textContent = '        Motor8.spin(reverse);'
+          LeftbackmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Leftbackm9.textContent = '        Motor9.spin(reverse);'
+          LeftbackmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Leftbackm10.textContent = '        Motor10.spin(reverse);'
+          LeftbackmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Leftbackm11.textContent = '        Motor11.spin(reverse);'
+          LeftbackmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Leftbackm12.textContent = '        Motor12.spin(reverse);'
+          LeftbackmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Leftbackm13.textContent = '        Motor13.spin(reverse);'
+          LeftbackmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Leftbackm14.textContent = '        Motor14.spin(reverse);'
+          LeftbackmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Leftbackm15.textContent = '        Motor15.spin(reverse);'
+          LeftbackmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Leftbackm16.textContent = '        Motor16.spin(reverse);'
+          LeftbackmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Leftbackm17.textContent = '        Motor17.spin(reverse);'
+          LeftbackmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Leftbackm18.textContent = '        Motor18.spin(reverse);'
+          LeftbackmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Leftbackm19.textContent = '        Motor19.spin(reverse);'
+          LeftbackmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Leftbackm20.textContent = '        Motor20.spin(reverse);'
+          LeftbackmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Leftbackm21.textContent = '        Motor21.spin(reverse);'
+          LeftbackmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Right front'){
-        
+        if(MotorController.value == '1'){ 
+          Rightfrontm1.textContent = '        Motor1.spin(reverse);'
+          RightfrontmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Rightfrontm2.textContent = '        Motor2.spin(reverse);'
+          RightfrontmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Rightfrontm3.textContent = '        Motor3.spin(reverse);'
+          RightfrontmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Rightfrontm4.textContent = '        Motor4.spin(reverse);'
+          RightfrontmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Rightfrontm5.textContent = '        Motor5.spin(reverse);'
+          RightfrontmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Rightfrontm6.textContent = '        Motor6.spin(reverse);'
+          RightfrontmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Rightfrontm7.textContent = '        Motor7.spin(reverse);'
+          RightfrontmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Rightfrontm8.textContent = '        Motor8.spin(reverse);'
+          RightfrontmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Rightfrontm9.textContent = '        Motor9.spin(reverse);'
+          RightfrontmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Rightfrontm10.textContent = '        Motor10.spin(reverse);'
+          RightfrontmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Rightfrontm11.textContent = '        Motor11.spin(reverse);'
+          RightfrontmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Rightfrontm12.textContent = '        Motor12.spin(reverse);'
+          RightfrontmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Rightfrontm13.textContent = '        Motor13.spin(reverse);'
+          RightfrontmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Rightfrontm14.textContent = '        Motor14.spin(reverse);'
+          RightfrontmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Rightfrontm15.textContent = '        Motor15.spin(reverse);'
+          RightfrontmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Rightfrontm16.textContent = '        Motor16.spin(reverse);'
+          RightfrontmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Rightfrontm17.textContent = '        Motor17.spin(reverse);'
+          RightfrontmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Rightfrontm18.textContent = '        Motor18.spin(reverse);'
+          RightfrontmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Rightfrontm19.textContent = '        Motor19.spin(reverse);'
+          RightfrontmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Rightfrontm20.textContent = '        Motor20.spin(reverse);'
+          RightfrontmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Rightfrontm21.textContent = '        Motor21.spin(reverse);'
+          RightfrontmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Right back'){
+        if(MotorController.value == '1'){ 
+          Rightbackm1.textContent = '        Motor1.spin(reverse);'
+          RightbackmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Rightbackm2.textContent = '        Motor2.spin(reverse);'
+          RightbackmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Rightbackm3.textContent = '        Motor3.spin(reverse);'
+          RightbackmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Rightbackm4.textContent = '        Motor4.spin(reverse);'
+          RightbackmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Rightbackm5.textContent = '        Motor5.spin(reverse);'
+          RightbackmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Rightbackm6.textContent = '        Motor6.spin(reverse);'
+          RightbackmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Rightbackm7.textContent = '        Motor7.spin(reverse);'
+          RightbackmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Rightbackm8.textContent = '        Motor8.spin(reverse);'
+          RightbackmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Rightbackm9.textContent = '        Motor9.spin(reverse);'
+          RightbackmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Rightbackm10.textContent = '        Motor10.spin(reverse);'
+          RightbackmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Rightbackm11.textContent = '        Motor11.spin(reverse);'
+          RightbackmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Rightbackm12.textContent = '        Motor12.spin(reverse);'
+          RightbackmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Rightbackm13.textContent = '        Motor13.spin(reverse);'
+          RightbackmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Rightbackm14.textContent = '        Motor14.spin(reverse);'
+          RightbackmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Rightbackm15.textContent = '        Motor15.spin(reverse);'
+          RightbackmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Rightbackm16.textContent = '        Motor16.spin(reverse);'
+          RightbackmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Rightbackm17.textContent = '        Motor17.spin(reverse);'
+          RightbackmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Rightbackm18.textContent = '        Motor18.spin(reverse);'
+          RightbackmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Rightbackm19.textContent = '        Motor19.spin(reverse);'
+          RightbackmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Rightbackm20.textContent = '        Motor20.spin(reverse);'
+          RightbackmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Rightbackm21.textContent = '        Motor21.spin(reverse);'
+          RightbackmS21.textContent = '        Motor21.stop();'
+        }
 
       }
       if(buttonController.value == 'Up'){
+        if(MotorController.value == '1'){
+          Upm1.textContent = '        Motor1.spin(reverse);'
+          UpmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Upm2.textContent = '        Motor2.spin(reverse);'
+          UpmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Upm3.textContent = '        Motor3.spin(reverse);'
+          UpmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Upm4.textContent = '        Motor4.spin(reverse);'
+          UpmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Upm5.textContent = '        Motor5.spin(reverse);'
+          UpmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Upm6.textContent = '        Motor6.spin(reverse);'
+          UpmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Upm7.textContent = '        Motor7.spin(reverse);'
+          UpmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Upm8.textContent = '        Motor8.spin(reverse);'
+          UpmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Upm9.textContent = '        Motor9.spin(reverse);'
+          UpmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Upm10.textContent = '        Motor10.spin(reverse);'
+          UpmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Upm11.textContent = '        Motor11.spin(reverse);'
+          UpmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Upm12.textContent = '        Motor12.spin(reverse);'
+          UpmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Upm13.textContent = '        Motor13.spin(reverse);'
+          UpmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Upm14.textContent = '        Motor14.spin(reverse);'
+          UpmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Upm15.textContent = '        Motor15.spin(reverse);'
+          UpmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Upm16.textContent = '        Motor16.spin(reverse);'
+          UpmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Upm17.textContent = '        Motor17.spin(reverse);'
+          UpmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Upm18.textContent = '        Motor18.spin(reverse);'
+          UpmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Upm19.textContent = '        Motor19.spin(reverse);'
+          UpmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Upm20.textContent = '        Motor20.spin(reverse);'
+          UpmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Upm21.textContent = '        Motor21.spin(reverse);'
+          UpmS21.textContent = '        Motor21.stop();'
+        }
 
       }
       if(buttonController.value == 'Down'){
-        
+        if(MotorController.value == '1'){
+          Downm1.textContent = '        Motor1.spin(reverse);'
+          DownmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Downm2.textContent = '        Motor2.spin(reverse);'
+          DownmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Downm3.textContent = '        Motor3.spin(reverse);'
+          DownmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Downm4.textContent = '        Motor4.spin(reverse);'
+          DownmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Downm5.textContent = '        Motor5.spin(reverse);'
+          DownmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Downm6.textContent = '        Motor6.spin(reverse);'
+          DownmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Downm7.textContent = '        Motor7.spin(reverse);'
+          DownmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Downm8.textContent = '        Motor8.spin(reverse);'
+          DownmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Downm9.textContent = '        Motor9.spin(reverse);'
+          DownmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Downm10.textContent = '        Motor10.spin(reverse);'
+          DownmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Downm11.textContent = '        Motor11.spin(reverse);'
+          DownmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Downm12.textContent = '        Motor12.spin(reverse);'
+          DownmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Downm13.textContent = '        Motor13.spin(reverse);'
+          DownmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Downm14.textContent = '        Motor14.spin(reverse);'
+          DownmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Downm15.textContent = '        Motor15.spin(reverse);'
+          DownmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Downm16.textContent = '        Motor16.spin(reverse);'
+          DownmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Downm17.textContent = '        Motor17.spin(reverse);'
+          DownmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Downm18.textContent = '        Motor18.spin(reverse);'
+          DownmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Downm19.textContent = '        Motor19.spin(reverse);'
+          DownmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Downm20.textContent = '        Motor20.spin(reverse);'
+          DownmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Downm21.textContent = '        Motor21.spin(reverse);'
+          DownmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Left'){
-        
+        if(MotorController.value == '1'){
+          Leftm1.textContent = '        Motor1.spin(reverse);'
+          LeftmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Leftm2.textContent = '        Motor2.spin(reverse);'
+          LeftmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Leftm3.textContent = '        Motor3.spin(reverse);'
+          LeftmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Leftm4.textContent = '        Motor4.spin(reverse);'
+          LeftmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Leftm5.textContent = '        Motor5.spin(reverse);'
+          LeftmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Leftm6.textContent = '        Motor6.spin(reverse);'
+          LeftmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Leftm7.textContent = '        Motor7.spin(reverse);'
+          LeftmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Leftm8.textContent = '        Motor8.spin(reverse);'
+          LeftmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Leftm9.textContent = '        Motor9.spin(reverse);'
+          LeftmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Leftm10.textContent = '        Motor10.spin(reverse);'
+          LeftmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Leftm11.textContent = '        Motor11.spin(reverse);'
+          LeftmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Leftm12.textContent = '        Motor12.spin(reverse);'
+          LeftmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Leftm13.textContent = '        Motor13.spin(reverse);'
+          LeftmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Leftm14.textContent = '        Motor14.spin(reverse);'
+          LeftmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Leftm15.textContent = '        Motor15.spin(reverse);'
+          LeftmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Leftm16.textContent = '        Motor16.spin(reverse);'
+          LeftmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Leftm17.textContent = '        Motor17.spin(reverse);'
+          LeftmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Leftm18.textContent = '        Motor18.spin(reverse);'
+          LeftmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Leftm19.textContent = '        Motor19.spin(reverse);'
+          LeftmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Leftm20.textContent = '        Motor20.spin(reverse);'
+          LeftmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Leftm21.textContent = '        Motor21.spin(reverse);'
+          LeftmS21.textContent = '        Motor21.stop();'
+        }
       }
       if(buttonController.value == 'Right'){
-        
-      }
+        if(MotorController.value == '1'){
+          Rightm1.textContent = '        Motor1.spin(reverse);'
+          RightmS1.textContent = '        Motor1.stop();'
+        }
+        if(MotorController.value == '2'){
+          Rightm2.textContent = '        Motor2.spin(reverse);'
+          RightmS2.textContent = '        Motor2.stop();'
+        }
+        if(MotorController.value == '3'){
+          Rightm3.textContent = '        Motor3.spin(reverse);'
+          RightmS3.textContent = '        Motor3.stop();'
+        }
+        if(MotorController.value == '4'){
+          Rightm4.textContent = '        Motor4.spin(reverse);'
+          RightmS4.textContent = '        Motor4.stop();'
+        }
+        if(MotorController.value == '5'){
+          Rightm5.textContent = '        Motor5.spin(reverse);'
+          RightmS5.textContent = '        Motor5.stop();'
+        }
+        if(MotorController.value == '6'){
+          Rightm6.textContent = '        Motor6.spin(reverse);'
+          RightmS6.textContent = '        Motor6.stop();'
+        }
+        if(MotorController.value == '7'){
+          Rightm7.textContent = '        Motor7.spin(reverse);'
+          RightmS7.textContent = '        Motor7.stop();'
+        }
+        if(MotorController.value == '8'){
+          Rightm8.textContent = '        Motor8.spin(reverse);'
+          RightmS8.textContent = '        Motor8.stop();'
+        }
+        if(MotorController.value == '9'){
+          Rightm9.textContent = '        Motor9.spin(reverse);'
+          RightmS9.textContent = '        Motor9.stop();'
+        }
+        if(MotorController.value == '10'){
+          Rightm10.textContent = '        Motor10.spin(reverse);'
+          RightmS10.textContent = '        Motor10.stop();'
+        }
+        if(MotorController.value == '11'){
+          Rightm11.textContent = '        Motor11.spin(reverse);'
+          RightmS11.textContent = '        Motor11.stop();'
+        }
+        if(MotorController.value == '12'){
+          Rightm12.textContent = '        Motor12.spin(reverse);'
+          RightmS12.textContent = '        Motor12.stop();'
+        }
+        if(MotorController.value == '13'){
+          Rightm13.textContent = '        Motor13.spin(reverse);'
+          RightmS13.textContent = '        Motor13.stop();'
+        }
+        if(MotorController.value == '14'){
+          Rightm14.textContent = '        Motor14.spin(reverse);'
+          RightmS14.textContent = '        Motor14.stop();'
+        }
+        if(MotorController.value == '15'){
+          Rightm15.textContent = '        Motor15.spin(reverse);'
+          RightmS15.textContent = '        Motor15.stop();'
+        }
+        if(MotorController.value == '16'){
+          Rightm16.textContent = '        Motor16.spin(reverse);'
+          RightmS16.textContent = '        Motor16.stop();'
+        }
+        if(MotorController.value == '17'){
+          Rightm17.textContent = '        Motor17.spin(reverse);'
+          RightmS17.textContent = '        Motor17.stop();'
+        }
+        if(MotorController.value == '18'){
+          Rightm18.textContent = '        Motor18.spin(reverse);'
+          RightmS18.textContent = '        Motor18.stop();'
+        }
+        if(MotorController.value == '19'){
+          Rightm19.textContent = '        Motor19.spin(reverse);'
+          RightmS19.textContent = '        Motor19.stop();'
+        }
+        if(MotorController.value == '20'){
+          Rightm20.textContent = '        Motor20.spin(reverse);'
+          RightmS20.textContent = '        Motor20.stop();'
+        }
+        if(MotorController.value == '21'){
+          Rightm21.textContent = '        Motor21.spin(reverse);'
+          RightmS21.textContent = '        Motor21.stop();'
+        }
+     }
     }
-  }
   if(buttonController.value == 'X'){
-    foolXB.textContent = 'Controller1XBButtonsControlMotorsStopped = true;'
+    foolXB.textContent = 'bool Controller1XBButtonsControlMotorsStopped = true;'
     X.textContent = '       if (Controller1.ButtonX.pressing()) {'
     X1.textContent = '      }'
     X2.textContent = '       if (!Controller1XBButtonsControlMotorsStopped) {'
@@ -564,7 +2568,7 @@ function clickAction(){
     X4.textContent = '       }'
   }
   if(buttonController.value == 'Y'){
-    foolYA.textContent = 'Controller1YAButtonsControlMotorsStopped = true;'
+    foolYA.textContent = 'bool Controller1YAButtonsControlMotorsStopped = true;'
     Y.textContent = '     if (Controller1.ButtonY.pressing()) {'
     Y1.textContent = '      }'
     Y2.textContent = '      else if (!Controller1YAButtonsControlMotorsStopped) {'
@@ -572,7 +2576,7 @@ function clickAction(){
     Y4.textContent = '       }'
   }
   if(buttonController.value == 'A'){
-    foolYA.textContent = 'Controller1YAButtonsControlMotorsStopped = true;'
+    foolYA.textContent = 'bool Controller1YAButtonsControlMotorsStopped = true;'
     A.textContent = '     if (Controller1.ButtonA.pressing()) {'
     A1.textContent = '      }'
     A2.textContent = '      if (!Controller1YAButtonsControlMotorsStopped) {'
@@ -580,7 +2584,7 @@ function clickAction(){
     A4.textContent = '       }'
   }
   if(buttonController.value == 'B'){
-    foolXB.textContent = 'Controller1XBButtonsControlMotorsStopped = true;'
+    foolXB.textContent = 'bool Controller1XBButtonsControlMotorsStopped = true;'
     B.textContent = '     if (Controller1.ButtonB.pressing()) {'
     B1.textContent = '      }'
     B2.textContent = '      else if (!Controller1XBButtonsControlMotorsStopped) {'
@@ -588,7 +2592,7 @@ function clickAction(){
     B4.textContent = '       }'
   }
   if(buttonController.value == 'Left front'){
-    foolLS.textContent = 'Controller1LeftShouldersControlMotorsStopped = true;'
+    foolLS.textContent = 'bool Controller1LeftShouldersControlMotorsStopped = true;'
     Leftfront.textContent = '       if (Controller1.ButtonL1.pressing()) {'
     Leftfront1.textContent = '      }'
     Leftfront2.textContent = '      else if (!Controller1LeftShouldersControlMotorsStopped) {'
@@ -596,7 +2600,7 @@ function clickAction(){
     Leftfront4.textContent = '       }'
   }
   if(buttonController.value == 'Left back'){
-    foolLS.textContent = 'Controller1LeftShouldersControlMotorsStopped = true;'
+    foolLS.textContent = 'bool Controller1LeftShouldersControlMotorsStopped = true;'
     Leftblack.textContent = '       if (Controller1.ButtonL2.pressing()) {'
     Leftblack1.textContent = '       }'
     Leftblack2.textContent = '       else if (!Controller1LeftShouldersControlMotorsStopped) {'
@@ -604,7 +2608,7 @@ function clickAction(){
     Leftblack4.textContent = '       }'
   }
   if(buttonController.value == 'Right front'){
-    foolRS.textContent = 'Controller1RightShouldersControlMotorsStopped = true;'
+    foolRS.textContent = 'bool Controller1RightShouldersControlMotorsStopped = true;'
     Rightfront.textContent = '       if (Controller1.ButtonR1.pressing()) {'
     Rightfront1.textContent = '       }'
     Rightfront2.textContent = '       else if (!Controller1RightShouldersControlMotorsStopped) {'
@@ -612,7 +2616,7 @@ function clickAction(){
     Rightfront4.textContent = '       }'
   }
   if(buttonController.value == 'Right back'){
-    foolRS.textContent = 'Controller1RightShouldersControlMotorsStopped = true;'
+    foolRS.textContent = 'bool Controller1RightShouldersControlMotorsStopped = true;'
     Rightback.textContent = '       if (Controller1.ButtonR2.pressing()) {'
     Rightfront1.textContent = '       }'
     Rightfront2.textContent = '       if (!Controller1RightShouldersControlMotorsStopped) {'
@@ -620,7 +2624,7 @@ function clickAction(){
     Rightfront4.textContent = '       }'
   }
   if(buttonController.value == 'Up'){
-    foolUD.textContent = 'Controller1UpDownButtonsControlMotorsStopped = true;'
+    foolUD.textContent = 'bool Controller1UpDownButtonsControlMotorsStopped = true;'
     Up.textContent = '       if (Controller1.ButtonL1.pressing()) {'
     Up1.textContent = '       }'
     Up2.textContent = '       else if (!Controller1UpDownButtonsControlMotorsStopped) {'
@@ -628,15 +2632,15 @@ function clickAction(){
     Up4.textContent = '       }'
   }
   if(buttonController.value == 'Down'){
-    foolUD.textContent = 'Controller1UpDownButtonsControlMotorsStopped = true;'
-    Down.textContent = 'if (Controller1.ButtonL1.pressing()) {'
+    foolUD.textContent = 'bool Controller1UpDownButtonsControlMotorsStopped = true;'
+    Down.textContent = '      if (Controller1.ButtonL1.pressing()) {'
     Down1.textContent = '       }'
     Down2.textContent = '       else if (!Controller1UpDownButtonsControlMotorsStopped) {'
     Down3.textContent = '         Controller1UpDownButtonsControlMotorsStopped = true;'
     Down4.textContent = '       }'
   }
   if(buttonController.value == 'Left'){
-    foolLR.textContent = 'Controller1LeftRightButtonsControlMotorsStopped = true;'
+    foolLR.textContent = 'bool Controller1LeftRightButtonsControlMotorsStopped = true;'
     Left.textContent = '       if (Controller1.ButtonL1.pressing()) {'
     Left1.textContent = '       }'
     Left2.textContent = '       else if (!Controller1LeftRightButtonsControlMotorsStopped) {'
@@ -644,7 +2648,7 @@ function clickAction(){
     Left4.textContent = '       }'
   }
   if(buttonController.value == 'Right'){
-    foolLR.textContent = 'Controller1LeftRightButtonsControlMotorsStopped = true;'
+    foolLR.textContent = 'bool Controller1LeftRightButtonsControlMotorsStopped = true;'
     Right.textContent = '       if (Controller1.ButtonL1.pressing()) {'
     Right1.textContent = '       }'
     Right2.textContent = '       else if (!Controller1LeftRightButtonsControlMotorsStopped) {'
@@ -879,7 +2883,7 @@ This is the code
 <p>bool DrivetrainRNeedsToBeStopped_Controller1 = true;</p>
 <p>int rc_auto_loop_function_Controller1() {</p>
 <p>while(true) {</p>
-<p> &nbsp if(RemoteControlCodeEnabled) {</p>
+<p> &nbsp  &nbsp if(RemoteControlCodeEnabled) {</p>
 <pre><p id="Drive1"></p></pre>
 <pre><p id="Drive2"></p></pre>
 <pre><p id="Drive3"></p></pre>
@@ -906,100 +2910,698 @@ This is the code
 <pre><p id="Drive24"></p></pre>
 <pre><p id="Drive25"></p></pre>
 <pre><p id="Drive26"></p></pre>
+
+
+
 <pre><P id="X"></p></pre>
 
-<pre><p id="XM1"></p></pre>
-<pre><p id="XM2"></p></pre>
-<pre><p id="XM3"></p></pre>
-<pre><p id="XM4"></p></pre>
-<pre><p id="XM5"></p></pre>
-<pre><p id="XM6"></p></pre>
-<pre><p id="XM7"></p></pre>
-<pre><p id="XM8"></p></pre>
-<pre><p id="XM9"></p></pre>
-<pre><p id="XM10"></p></pre>
-<pre><p id="XM11"></p></pre>
-<pre><p id="XM12"></p></pre>
-<pre><p id="XM13"></p></pre>
-<pre><p id="XM14"></p></pre>
-<pre><p id="XM15"></p></pre>
-<pre><p id="XM16"></p></pre>
-<pre><p id="XM17"></p></pre>
-<pre><p id="XM18"></p></pre>
-<pre><p id="XM19"></p></pre>
-<pre><p id="XM20"></p></pre>
-<pre><p id="XM21"></p></pre>
+<pre><p id="Xm1"></p></pre>
+<pre><p id="Xm2"></p></pre>
+<pre><p id="Xm3"></p></pre>
+<pre><p id="Xm4"></p></pre>
+<pre><p id="Xm5"></p></pre>
+<pre><p id="Xm6"></p></pre>
+<pre><p id="Xm7"></p></pre>
+<pre><p id="Xm8"></p></pre>
+<pre><p id="Xm9"></p></pre>
+<pre><p id="Xm10"></p></pre>
+<pre><p id="Xm11"></p></pre>
+<pre><p id="Xm12"></p></pre>
+<pre><p id="Xm13"></p></pre>
+<pre><p id="Xm14"></p></pre>
+<pre><p id="Xm15"></p></pre>
+<pre><p id="Xm16"></p></pre>
+<pre><p id="Xm17"></p></pre>
+<pre><p id="Xm18"></p></pre>
+<pre><p id="Xm19"></p></pre>
+<pre><p id="Xm20"></p></pre>
+<pre><p id="Xm21"></p></pre>
 
 <pre><P id="X1"></p></pre>
 <pre><P id="X2"></p></pre>
+
+<pre><p id="XmS1"></p></pre>
+<pre><p id="XmS2"></p></pre>
+<pre><p id="XmS3"></p></pre>
+<pre><p id="XmS4"></p></pre>
+<pre><p id="XmS5"></p></pre>
+<pre><p id="XmS6"></p></pre>
+<pre><p id="XmS7"></p></pre>
+<pre><p id="XmS8"></p></pre>
+<pre><p id="XmS9"></p></pre>
+<pre><p id="XmS10"></p></pre>
+<pre><p id="XmS11"></p></pre>
+<pre><p id="XmS12"></p></pre>
+<pre><p id="XmS13"></p></pre>
+<pre><p id="XmS14"></p></pre>
+<pre><p id="XmS15"></p></pre>
+<pre><p id="XmS16"></p></pre>
+<pre><p id="XmS17"></p></pre>
+<pre><p id="XmS18"></p></pre>
+<pre><p id="XmS19"></p></pre>
+<pre><p id="XmS20"></p></pre>
+<pre><p id="XmS21"></p></pre>
+
 <pre><P id="X3"></p></pre>
 <pre><P id="X4"></p></pre>
+
+
+
+
+
+
+
+
 <pre><p id="Y"></p></pre>
+
+<pre><p id="Ym1"></p></pre>
+<pre><p id="Ym2"></p></pre>
+<pre><p id="Ym3"></p></pre>
+<pre><p id="Ym4"></p></pre>
+<pre><p id="Ym5"></p></pre>
+<pre><p id="Ym6"></p></pre>
+<pre><p id="Ym7"></p></pre>
+<pre><p id="Ym8"></p></pre>
+<pre><p id="Ym9"></p></pre>
+<pre><p id="Ym10"></p></pre>
+<pre><p id="Ym11"></p></pre>
+<pre><p id="Ym12"></p></pre>
+<pre><p id="Ym13"></p></pre>
+<pre><p id="Ym14"></p></pre>
+<pre><p id="Ym15"></p></pre>
+<pre><p id="Ym16"></p></pre>
+<pre><p id="Ym17"></p></pre>
+<pre><p id="Ym18"></p></pre>
+<pre><p id="Ym19"></p></pre>
+<pre><p id="Ym20"></p></pre>
+<pre><p id="Ym21"></p></pre>
 
 <pre><p id="Y1"></p></pre>
 <pre><p id="Y2"></p></pre>
+
+<pre><p id="YmS1"></p></pre>
+<pre><p id="YmS2"></p></pre>
+<pre><p id="YmS3"></p></pre>
+<pre><p id="YmS4"></p></pre>
+<pre><p id="YmS5"></p></pre>
+<pre><p id="YmS6"></p></pre>
+<pre><p id="YmS7"></p></pre>
+<pre><p id="YmS8"></p></pre>
+<pre><p id="YmS9"></p></pre>
+<pre><p id="YmS10"></p></pre>
+<pre><p id="YmS11"></p></pre>
+<pre><p id="YmS12"></p></pre>
+<pre><p id="YmS13"></p></pre>
+<pre><p id="YmS14"></p></pre>
+<pre><p id="YmS15"></p></pre>
+<pre><p id="YmS16"></p></pre>
+<pre><p id="YmS17"></p></pre>
+<pre><p id="YmS18"></p></pre>
+<pre><p id="YmS19"></p></pre>
+<pre><p id="YmS20"></p></pre>
+<pre><p id="YmS21"></p></pre>
+
 <pre><p id="Y3"></p></pre>
 <pre><p id="Y4"></p></pre>
-<pre><p id="A"></p></pre>
 
-<pre><p id="A1"></p></pre>
-<pre><p id="A2"></p></pre>
-<pre><p id="A3"></p></pre>
-<pre><p id="A4"></p></pre>
-<pre><p id="B"></p></pre>
 
-<pre><p id="B1"></p></pre>
-<pre><p id="B2"></p></pre>
-<pre><p id="B3"></p></pre>
-<pre><p id="B4"></p></pre>
-<pre><p id="Leftfront"></p></pre>
 
-<pre><p id="Leftfront1"></p></pre>
-<pre><p id="Leftfront2"></p></pre>
-<pre><p id="Leftfront3"></p></pre>
-<pre><p id="Leftfront4"></p></pre>
+
+
+
+<pre><P id="A"></p></pre>
+
+<pre><p id="Am1"></p></pre>
+<pre><p id="Am2"></p></pre>
+<pre><p id="Am3"></p></pre>
+<pre><p id="Am4"></p></pre>
+<pre><p id="Am5"></p></pre>
+<pre><p id="Am6"></p></pre>
+<pre><p id="Am7"></p></pre>
+<pre><p id="Am8"></p></pre>
+<pre><p id="Am9"></p></pre>
+<pre><p id="Am10"></p></pre>
+<pre><p id="Am11"></p></pre>
+<pre><p id="Am12"></p></pre>
+<pre><p id="Am13"></p></pre>
+<pre><p id="Am14"></p></pre>
+<pre><p id="Am15"></p></pre>
+<pre><p id="Am16"></p></pre>
+<pre><p id="Am17"></p></pre>
+<pre><p id="Am18"></p></pre>
+<pre><p id="Am19"></p></pre>
+<pre><p id="Am20"></p></pre>
+<pre><p id="Am21"></p></pre>
+
+<pre><P id="A1"></p></pre>
+<pre><P id="A2"></p></pre>
+
+<pre><p id="AmS1"></p></pre>
+<pre><p id="AmS2"></p></pre>
+<pre><p id="AmS3"></p></pre>
+<pre><p id="AmS4"></p></pre>
+<pre><p id="AmS5"></p></pre>
+<pre><p id="AmS6"></p></pre>
+<pre><p id="AmS7"></p></pre>
+<pre><p id="AmS8"></p></pre>
+<pre><p id="AmS9"></p></pre>
+<pre><p id="AmS10"></p></pre>
+<pre><p id="AmS11"></p></pre>
+<pre><p id="AmS12"></p></pre>
+<pre><p id="AmS13"></p></pre>
+<pre><p id="AmS14"></p></pre>
+<pre><p id="AmS15"></p></pre>
+<pre><p id="AmS16"></p></pre>
+<pre><p id="AmS17"></p></pre>
+<pre><p id="AmS18"></p></pre>
+<pre><p id="AmS19"></p></pre>
+<pre><p id="AmS20"></p></pre>
+<pre><p id="AmS21"></p></pre>
+
+<pre><P id="A3"></p></pre>
+<pre><P id="A4"></p></pre>
+
+
+
+
+
+
+
+
+
+<pre><P id="B"></p></pre>
+
+<pre><p id="Bm1"></p></pre> 
+<pre><p id="Bm2"></p></pre>
+<pre><p id="Bm3"></p></pre>
+<pre><p id="Bm4"></p></pre>
+<pre><p id="Bm5"></p></pre>
+<pre><p id="Bm6"></p></pre>
+<pre><p id="Bm7"></p></pre>
+<pre><p id="Bm8"></p></pre>
+<pre><p id="Bm9"></p></pre>
+<pre><p id="Bm10"></p></pre>
+<pre><p id="Bm11"></p></pre>
+<pre><p id="Bm12"></p></pre>
+<pre><p id="Bm13"></p></pre>
+<pre><p id="Bm14"></p></pre>
+<pre><p id="Bm15"></p></pre>
+<pre><p id="Bm16"></p></pre>
+<pre><p id="Bm17"></p></pre>
+<pre><p id="Bm18"></p></pre>
+<pre><p id="Bm19"></p></pre>
+<pre><p id="Bm20"></p></pre>
+<pre><p id="Bm21"></p></pre>
+
+<pre><P id="B1"></p></pre>
+<pre><P id="B2"></p></pre>
+
+<pre><p id="BmS1"></p></pre>
+<pre><p id="BmS2"></p></pre>
+<pre><p id="BmS3"></p></pre>
+<pre><p id="BmS4"></p></pre>
+<pre><p id="BmS5"></p></pre>
+<pre><p id="BmS6"></p></pre>
+<pre><p id="BmS7"></p></pre>
+<pre><p id="BmS8"></p></pre>
+<pre><p id="BmS9"></p></pre>
+<pre><p id="BmS10"></p></pre>
+<pre><p id="BmS11"></p></pre>
+<pre><p id="BmS12"></p></pre>
+<pre><p id="BmS13"></p></pre>
+<pre><p id="BmS14"></p></pre>
+<pre><p id="BmS15"></p></pre>
+<pre><p id="BmS16"></p></pre>
+<pre><p id="BmS17"></p></pre>
+<pre><p id="BmS18"></p></pre>
+<pre><p id="BmS19"></p></pre>
+<pre><p id="BmS20"></p></pre>
+<pre><p id="BmS21"></p></pre>
+
+<pre><P id="B3"></p></pre>
+<pre><P id="B4"></p></pre>
+
+
+
+
+
+
+
+
+
+<pre><P id="Leftfront"></p></pre>
+
+<pre><p id="Leftfrontm1"></p></pre> 
+<pre><p id="Leftfrontm2"></p></pre>
+<pre><p id="Leftfrontm3"></p></pre>
+<pre><p id="Leftfrontm4"></p></pre>
+<pre><p id="Leftfrontm5"></p></pre>
+<pre><p id="Leftfrontm6"></p></pre>
+<pre><p id="Leftfrontm7"></p></pre>
+<pre><p id="Leftfrontm8"></p></pre>
+<pre><p id="Leftfrontm9"></p></pre>
+<pre><p id="Leftfrontm10"></p></pre>
+<pre><p id="Leftfrontm11"></p></pre>
+<pre><p id="Leftfrontm12"></p></pre>
+<pre><p id="Leftfrontm13"></p></pre>
+<pre><p id="Leftfrontm14"></p></pre>
+<pre><p id="Leftfrontm15"></p></pre>
+<pre><p id="Leftfrontm16"></p></pre>
+<pre><p id="Leftfrontm17"></p></pre>
+<pre><p id="Leftfrontm18"></p></pre>
+<pre><p id="Leftfrontm19"></p></pre>
+<pre><p id="Leftfrontm20"></p></pre>
+<pre><p id="Leftfrontm21"></p></pre>
+
+<pre><P id="Leftfront1"></p></pre>
+<pre><P id="Leftfront2"></p></pre>
+
+<pre><p id="LeftfrontmS1"></p></pre>
+<pre><p id="LeftfrontmS2"></p></pre>
+<pre><p id="LeftfrontmS3"></p></pre>
+<pre><p id="LeftfrontmS4"></p></pre>
+<pre><p id="LeftfrontmS5"></p></pre>
+<pre><p id="LeftfrontmS6"></p></pre>
+<pre><p id="LeftfrontmS7"></p></pre>
+<pre><p id="LeftfrontmS8"></p></pre>
+<pre><p id="LeftfrontmS9"></p></pre>
+<pre><p id="LeftfrontmS10"></p></pre>
+<pre><p id="LeftfrontmS11"></p></pre>
+<pre><p id="LeftfrontmS12"></p></pre>
+<pre><p id="LeftfrontmS13"></p></pre>
+<pre><p id="LeftfrontmS14"></p></pre>
+<pre><p id="LeftfrontmS15"></p></pre>
+<pre><p id="LeftfrontmS16"></p></pre>
+<pre><p id="LeftfrontmS17"></p></pre>
+<pre><p id="LeftfrontmS18"></p></pre>
+<pre><p id="LeftfrontmS19"></p></pre>
+<pre><p id="LeftfrontmS20"></p></pre>
+<pre><p id="LeftfrontmS21"></p></pre>
+
+<pre><P id="Leftfront3"></p></pre>
+<pre><P id="Leftfront4"></p></pre>
+
+
+
+
+
 <pre><p id="Leftback"></p></pre>
+
+<pre><p id="Leftbackm1"></p></pre>
+<pre><p id="Leftbackm2"></p></pre>
+<pre><p id="Leftbackm3"></p></pre>
+<pre><p id="Leftbackm4"></p></pre>
+<pre><p id="Leftbackm5"></p></pre>
+<pre><p id="Leftbackm6"></p></pre>
+<pre><p id="Leftbackm7"></p></pre>
+<pre><p id="Leftbackm8"></p></pre>
+<pre><p id="Leftbackm9"></p></pre>
+<pre><p id="Leftbackm10"></p></pre>
+<pre><p id="Leftbackm11"></p></pre>
+<pre><p id="Leftbackm12"></p></pre>
+<pre><p id="Leftbackm13"></p></pre>
+<pre><p id="Leftbackm14"></p></pre>
+<pre><p id="Leftbackm15"></p></pre>
+<pre><p id="Leftbackm16"></p></pre>
+<pre><p id="Leftbackm17"></p></pre>
+<pre><p id="Leftbackm18"></p></pre>
+<pre><p id="Leftbackm19"></p></pre>
+<pre><p id="Leftbackm20"></p></pre>
+<pre><p id="Leftbackm21"></p></pre>
 
 <pre><p id="Leftback1"></p></pre>
 <pre><p id="Leftback2"></p></pre>
+
+<pre><p id="LeftbackmS1"></p></pre>
+<pre><p id="LeftbackmS2"></p></pre>
+<pre><p id="LeftbackmS3"></p></pre>
+<pre><p id="LeftbackmS4"></p></pre>
+<pre><p id="LeftbackmS5"></p></pre>
+<pre><p id="LeftbackmS6"></p></pre>
+<pre><p id="LeftbackmS7"></p></pre>
+<pre><p id="LeftbackmS8"></p></pre>
+<pre><p id="LeftbackmS9"></p></pre>
+<pre><p id="LeftbackmS10"></p></pre>
+<pre><p id="LeftbackmS11"></p></pre>
+<pre><p id="LeftbackmS12"></p></pre>
+<pre><p id="LeftbackmS13"></p></pre>
+<pre><p id="LeftbackmS14"></p></pre>
+<pre><p id="LeftbackmS15"></p></pre>
+<pre><p id="LeftbackmS16"></p></pre>
+<pre><p id="LeftbackmS17"></p></pre>
+<pre><p id="LeftbackmS18"></p></pre>
+<pre><p id="LeftbackmS19"></p></pre>
+<pre><p id="LeftbackmS20"></p></pre>
+<pre><p id="LeftbackmS21"></p></pre>
+
 <pre><p id="Leftback3"></p></pre>
 <pre><p id="Leftback4"></p></pre>
-<pre><p id="Rightfront"></p></pre>
 
-<pre><p id="Rightfront1"></p></pre>
-<pre><p id="Rightfront2"></p></pre>
-<pre><p id="Rightfront3"></p></pre>
-<pre><p id="Rightfront4"></p></pre>
-<pre><p id="Rightback"></p></pre>
 
-<pre><p id="Rightback1"></p></pre>
-<pre><p id="Rightback2"></p></pre>
-<pre><p id="Rightback3"></p></pre>
-<pre><p id="Rightback4"></p></pre>
-<pre><p id="Up"></p></pre>
 
-<pre><p id="Up1"></p></pre>
-<pre><p id="Up2"></p></pre>
-<pre><p id="Up3"></p></pre>
-<pre><p id="Up4"></p></pre>
+
+
+
+<pre><P id="Rightfront"></p></pre>
+
+<pre><p id="Rightfrontm1"></p></pre>
+<pre><p id="Rightfrontm2"></p></pre>
+<pre><p id="Rightfrontm3"></p></pre>
+<pre><p id="Rightfrontm4"></p></pre>
+<pre><p id="Rightfrontm5"></p></pre>
+<pre><p id="Rightfrontm6"></p></pre>
+<pre><p id="Rightfrontm7"></p></pre>
+<pre><p id="Rightfrontm8"></p></pre>
+<pre><p id="Rightfrontm9"></p></pre>
+<pre><p id="Rightfrontm10"></p></pre>
+<pre><p id="Rightfrontm11"></p></pre>
+<pre><p id="Rightfrontm12"></p></pre>
+<pre><p id="Rightfrontm13"></p></pre>
+<pre><p id="Rightfrontm14"></p></pre>
+<pre><p id="Rightfrontm15"></p></pre>
+<pre><p id="Rightfrontm16"></p></pre>
+<pre><p id="Rightfrontm17"></p></pre>
+<pre><p id="Rightfrontm18"></p></pre>
+<pre><p id="Rightfrontm19"></p></pre>
+<pre><p id="Rightfrontm20"></p></pre>
+<pre><p id="Rightfrontm21"></p></pre>
+
+<pre><P id="Rightfront1"></p></pre>
+<pre><P id="Rightfront2"></p></pre>
+
+<pre><p id="RightfrontmS1"></p></pre>
+<pre><p id="RightfrontmS2"></p></pre>
+<pre><p id="RightfrontmS3"></p></pre>
+<pre><p id="RightfrontmS4"></p></pre>
+<pre><p id="RightfrontmS5"></p></pre>
+<pre><p id="RightfrontmS6"></p></pre>
+<pre><p id="RightfrontmS7"></p></pre>
+<pre><p id="RightfrontmS8"></p></pre>
+<pre><p id="RightfrontmS9"></p></pre>
+<pre><p id="RightfrontmS10"></p></pre>
+<pre><p id="RightfrontmS11"></p></pre>
+<pre><p id="RightfrontmS12"></p></pre>
+<pre><p id="RightfrontmS13"></p></pre>
+<pre><p id="RightfrontmS14"></p></pre>
+<pre><p id="RightfrontmS15"></p></pre>
+<pre><p id="RightfrontmS16"></p></pre>
+<pre><p id="RightfrontmS17"></p></pre>
+<pre><p id="RightfrontmS18"></p></pre>
+<pre><p id="RightfrontmS19"></p></pre>
+<pre><p id="RightfrontmS20"></p></pre>
+<pre><p id="RightfrontmS21"></p></pre>
+
+<pre><P id="Rightfront3"></p></pre>
+<pre><P id="Rightfront4"></p></pre>
+
+
+
+
+
+
+
+
+
+<pre><P id="Rightback"></p></pre>
+
+<pre><p id="Rightbackm1"></p></pre> 
+<pre><p id="Rightbackm2"></p></pre>
+<pre><p id="Rightbackm3"></p></pre>
+<pre><p id="Rightbackm4"></p></pre>
+<pre><p id="Rightbackm5"></p></pre>
+<pre><p id="Rightbackm6"></p></pre>
+<pre><p id="Rightbackm7"></p></pre>
+<pre><p id="Rightbackm8"></p></pre>
+<pre><p id="Rightbackm9"></p></pre>
+<pre><p id="Rightbackm10"></p></pre>
+<pre><p id="Rightbackm11"></p></pre>
+<pre><p id="Rightbackm12"></p></pre>
+<pre><p id="Rightbackm13"></p></pre>
+<pre><p id="Rightbackm14"></p></pre>
+<pre><p id="Rightbackm15"></p></pre>
+<pre><p id="Rightbackm16"></p></pre>
+<pre><p id="Rightbackm17"></p></pre>
+<pre><p id="Rightbackm18"></p></pre>
+<pre><p id="Rightbackm19"></p></pre>
+<pre><p id="Rightbackm20"></p></pre>
+<pre><p id="Rightbackm21"></p></pre>
+
+<pre><P id="Rightback1"></p></pre>
+<pre><P id="Rightback2"></p></pre>
+
+<pre><p id="RightbackmS1"></p></pre>
+<pre><p id="RightbackmS2"></p></pre>
+<pre><p id="RightbackmS3"></p></pre>
+<pre><p id="RightbackmS4"></p></pre>
+<pre><p id="RightbackmS5"></p></pre>
+<pre><p id="RightbackmS6"></p></pre>
+<pre><p id="RightbackmS7"></p></pre>
+<pre><p id="RightbackmS8"></p></pre>
+<pre><p id="RightbackmS9"></p></pre>
+<pre><p id="RightbackmS10"></p></pre>
+<pre><p id="RightbackmS11"></p></pre>
+<pre><p id="RightbackmS12"></p></pre>
+<pre><p id="RightbackmS13"></p></pre>
+<pre><p id="RightbackmS14"></p></pre>
+<pre><p id="RightbackmS15"></p></pre>
+<pre><p id="RightbackmS16"></p></pre>
+<pre><p id="RightbackmS17"></p></pre>
+<pre><p id="RightbackmS18"></p></pre>
+<pre><p id="RightbackmS19"></p></pre>
+<pre><p id="RightbackmS20"></p></pre>
+<pre><p id="RightbackmS21"></p></pre>
+
+<pre><P id="Rightback3"></p></pre>
+<pre><P id="Rightback4"></p></pre>
+
+
+<pre><P id="Up"></p></pre>
+
+<pre><p id="Upm1"></p></pre>
+<pre><p id="Upm2"></p></pre>
+<pre><p id="Upm3"></p></pre>
+<pre><p id="Upm4"></p></pre>
+<pre><p id="Upm5"></p></pre>
+<pre><p id="Upm6"></p></pre>
+<pre><p id="Upm7"></p></pre>
+<pre><p id="Upm8"></p></pre>
+<pre><p id="Upm9"></p></pre>
+<pre><p id="Upm10"></p></pre>
+<pre><p id="Upm11"></p></pre>
+<pre><p id="Upm12"></p></pre>
+<pre><p id="Upm13"></p></pre>
+<pre><p id="Upm14"></p></pre>
+<pre><p id="Upm15"></p></pre>
+<pre><p id="Upm16"></p></pre>
+<pre><p id="Upm17"></p></pre>
+<pre><p id="Upm18"></p></pre>
+<pre><p id="Upm19"></p></pre>
+<pre><p id="Upm20"></p></pre>
+<pre><p id="Upm21"></p></pre>
+
+<pre><P id="Up1"></p></pre>
+<pre><P id="Up2"></p></pre>
+
+<pre><p id="UpmS1"></p></pre>
+<pre><p id="UpmS2"></p></pre>
+<pre><p id="UpmS3"></p></pre>
+<pre><p id="UpmS4"></p></pre>
+<pre><p id="UpmS5"></p></pre>
+<pre><p id="UpmS6"></p></pre>
+<pre><p id="UpmS7"></p></pre>
+<pre><p id="UpmS8"></p></pre>
+<pre><p id="UpmS9"></p></pre>
+<pre><p id="UpmS10"></p></pre>
+<pre><p id="UpmS11"></p></pre>
+<pre><p id="UpmS12"></p></pre>
+<pre><p id="UpmS13"></p></pre>
+<pre><p id="UpmS14"></p></pre>
+<pre><p id="UpmS15"></p></pre>
+<pre><p id="UpmS16"></p></pre>
+<pre><p id="UpmS17"></p></pre>
+<pre><p id="UpmS18"></p></pre>
+<pre><p id="UpmS19"></p></pre>
+<pre><p id="UpmS20"></p></pre>
+<pre><p id="UpmS21"></p></pre>
+
+<pre><P id="Up3"></p></pre>
+<pre><P id="Up4"></p></pre>
+
+
+
+
+
+
+
+
 <pre><p id="Down"></p></pre>
+
+<pre><p id="Downm1"></p></pre>
+<pre><p id="Downm2"></p></pre>
+<pre><p id="Downm3"></p></pre>
+<pre><p id="Downm4"></p></pre>
+<pre><p id="Downm5"></p></pre>
+<pre><p id="Downm6"></p></pre>
+<pre><p id="Downm7"></p></pre>
+<pre><p id="Downm8"></p></pre>
+<pre><p id="Downm9"></p></pre>
+<pre><p id="Downm10"></p></pre>
+<pre><p id="Downm11"></p></pre>
+<pre><p id="Downm12"></p></pre>
+<pre><p id="Downm13"></p></pre>
+<pre><p id="Downm14"></p></pre>
+<pre><p id="Downm15"></p></pre>
+<pre><p id="Downm16"></p></pre>
+<pre><p id="Downm17"></p></pre>
+<pre><p id="Downm18"></p></pre>
+<pre><p id="Downm19"></p></pre>
+<pre><p id="Downm20"></p></pre>
+<pre><p id="Downm21"></p></pre>
 
 <pre><p id="Down1"></p></pre>
 <pre><p id="Down2"></p></pre>
+
+<pre><p id="DownmS1"></p></pre>
+<pre><p id="DownmS2"></p></pre>
+<pre><p id="DownmS3"></p></pre>
+<pre><p id="DownmS4"></p></pre>
+<pre><p id="DownmS5"></p></pre>
+<pre><p id="DownmS6"></p></pre>
+<pre><p id="DownmS7"></p></pre>
+<pre><p id="DownmS8"></p></pre>
+<pre><p id="DownmS9"></p></pre>
+<pre><p id="DownmS10"></p></pre>
+<pre><p id="DownmS11"></p></pre>
+<pre><p id="DownmS12"></p></pre>
+<pre><p id="DownmS13"></p></pre>
+<pre><p id="DownmS14"></p></pre>
+<pre><p id="DownmS15"></p></pre>
+<pre><p id="DownmS16"></p></pre>
+<pre><p id="DownmS17"></p></pre>
+<pre><p id="DownmS18"></p></pre>
+<pre><p id="DownmS19"></p></pre>
+<pre><p id="DownmS20"></p></pre>
+<pre><p id="DownmS21"></p></pre>
+
 <pre><p id="Down3"></p></pre>
 <pre><p id="Down4"></p></pre>
-<pre><p id="Left"></p></pre>
 
-<pre><p id="Left1"></p></pre>
-<pre><p id="Left2"></p></pre>
-<pre><p id="Left3"></p></pre>
-<pre><p id="Left4"></p></pre>
-<pre><p id="Right"></p></pre>
 
-<pre><p id="Right1"></p></pre>
-<pre><p id="Right2"></p></pre>
-<pre><p id="Right3"></p></pre>
-<pre><p id="Right4"></p></pre>
+
+
+
+
+<pre><P id="Left"></p></pre>
+
+<pre><p id="Leftm1"></p></pre>
+<pre><p id="Leftm2"></p></pre>
+<pre><p id="Leftm3"></p></pre>
+<pre><p id="Leftm4"></p></pre>
+<pre><p id="Leftm5"></p></pre>
+<pre><p id="Leftm6"></p></pre>
+<pre><p id="Leftm7"></p></pre>
+<pre><p id="Leftm8"></p></pre>
+<pre><p id="Leftm9"></p></pre>
+<pre><p id="Leftm10"></p></pre>
+<pre><p id="Leftm11"></p></pre>
+<pre><p id="Leftm12"></p></pre>
+<pre><p id="Leftm13"></p></pre>
+<pre><p id="Leftm14"></p></pre>
+<pre><p id="Leftm15"></p></pre>
+<pre><p id="Leftm16"></p></pre>
+<pre><p id="Leftm17"></p></pre>
+<pre><p id="Leftm18"></p></pre>
+<pre><p id="Leftm19"></p></pre>
+<pre><p id="Leftm20"></p></pre>
+<pre><p id="Leftm21"></p></pre>
+
+<pre><P id="Left1"></p></pre>
+<pre><P id="Left2"></p></pre>
+
+<pre><p id="LeftmS1"></p></pre>
+<pre><p id="LeftmS2"></p></pre>
+<pre><p id="LeftmS3"></p></pre>
+<pre><p id="LeftmS4"></p></pre>
+<pre><p id="LeftmS5"></p></pre>
+<pre><p id="LeftmS6"></p></pre>
+<pre><p id="LeftmS7"></p></pre>
+<pre><p id="LeftmS8"></p></pre>
+<pre><p id="LeftmS9"></p></pre>
+<pre><p id="LeftmS10"></p></pre>
+<pre><p id="LeftmS11"></p></pre>
+<pre><p id="LeftmS12"></p></pre>
+<pre><p id="LeftmS13"></p></pre>
+<pre><p id="LeftmS14"></p></pre>
+<pre><p id="LeftmS15"></p></pre>
+<pre><p id="LeftmS16"></p></pre>
+<pre><p id="LeftmS17"></p></pre>
+<pre><p id="LeftmS18"></p></pre>
+<pre><p id="LeftmS19"></p></pre>
+<pre><p id="LeftmS20"></p></pre>
+<pre><p id="LeftmS21"></p></pre>
+
+<pre><P id="Left3"></p></pre>
+<pre><P id="Left4"></p></pre>
+
+
+
+
+
+
+
+
+
+<pre><P id="Right"></p></pre>
+
+<pre><p id="Rightm1"></p></pre> 
+<pre><p id="Rightm2"></p></pre>
+<pre><p id="Rightm3"></p></pre>
+<pre><p id="Rightm4"></p></pre>
+<pre><p id="Rightm5"></p></pre>
+<pre><p id="Rightm6"></p></pre>
+<pre><p id="Rightm7"></p></pre>
+<pre><p id="Rightm8"></p></pre>
+<pre><p id="Rightm9"></p></pre>
+<pre><p id="Rightm10"></p></pre>
+<pre><p id="Rightm11"></p></pre>
+<pre><p id="Rightm12"></p></pre>
+<pre><p id="Rightm13"></p></pre>
+<pre><p id="Rightm14"></p></pre>
+<pre><p id="Rightm15"></p></pre>
+<pre><p id="Rightm16"></p></pre>
+<pre><p id="Rightm17"></p></pre>
+<pre><p id="Rightm18"></p></pre>
+<pre><p id="Rightm19"></p></pre>
+<pre><p id="Rightm20"></p></pre>
+<pre><p id="Rightm21"></p></pre>
+
+<pre><P id="Right1"></p></pre>
+<pre><P id="Right2"></p></pre>
+
+<pre><p id="RightmS1"></p></pre>
+<pre><p id="RightmS2"></p></pre>
+<pre><p id="RightmS3"></p></pre>
+<pre><p id="RightmS4"></p></pre>
+<pre><p id="RightmS5"></p></pre>
+<pre><p id="RightmS6"></p></pre>
+<pre><p id="RightmS7"></p></pre>
+<pre><p id="RightmS8"></p></pre>
+<pre><p id="RightmS9"></p></pre>
+<pre><p id="RightmS10"></p></pre>
+<pre><p id="RightmS11"></p></pre>
+<pre><p id="RightmS12"></p></pre>
+<pre><p id="RightmS13"></p></pre>
+<pre><p id="RightmS14"></p></pre>
+<pre><p id="RightmS15"></p></pre>
+<pre><p id="RightmS16"></p></pre>
+<pre><p id="RightmS17"></p></pre>
+<pre><p id="RightmS18"></p></pre>
+<pre><p id="RightmS19"></p></pre>
+<pre><p id="RightmS20"></p></pre>
+<pre><p id="RightmS21"></p></pre>
+
+<pre><P id="Right3"></p></pre>
+<pre><P id="Right4"></p></pre>
 <p>&nbsp &nbsp}</p>
 <p>&nbspwait(20, msec);</p>
 <p>&nbsp}</p>
